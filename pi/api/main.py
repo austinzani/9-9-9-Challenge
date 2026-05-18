@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-import sqlite3
 from contextlib import asynccontextmanager
 from datetime import UTC, datetime
-from typing import Any
+from typing import Any, Literal
 
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel, Field
 
-from pi.api.db import connect, initialize_schema
+from pi.api.db import (
+    connect,
+    fetch_participants_with_totals,
+    initialize_schema,
+    participant_exists,
+    record_tap,
+    upsert_participant,
+)
 from pi.api.ws import ConnectionManager
 
 
@@ -25,43 +31,49 @@ class TapRequest(BaseModel):
     """Payload for tap submission calls."""
 
     uid: str = Field(min_length=1)
-    station: str = Field(pattern="^(hotdog|beer)$")
+    station: Literal['hotdog', 'beer']
 
 
 manager = ConnectionManager()
 
 
-def build_canned_state() -> dict[str, Any]:
-    """Return placeholder state until live integration is wired in."""
+def build_game_placeholder() -> dict[str, Any]:
+    """Return a static linescore shape until poller integration is wired in."""
     return {
-        "game": {
-            "awayAbbr": "CHC",
-            "awayName": "CUBS",
-            "homeAbbr": "CIN",
-            "homeName": "REDS",
-            "inningOrdinal": "1st",
-            "inningState": "Top",
-            "abstractState": "Preview",
-            "innings": {
-                "away": [None] * 9,
-                "home": [None] * 9,
-            },
-            "R": {"away": 0, "home": 0},
-            "H": {"away": 0, "home": 0},
-            "E": {"away": 0, "home": 0},
+        "awayAbbr": "CHC",
+        "awayName": "CUBS",
+        "homeAbbr": "CIN",
+        "homeName": "REDS",
+        "inningOrdinal": "1st",
+        "inningState": "Top",
+        "abstractState": "Preview",
+        "innings": {
+            "away": [None] * 9,
+            "home": [None] * 9,
         },
-        "participants": [],
+        "R": {"away": 0, "home": 0},
+        "H": {"away": 0, "home": 0},
+        "E": {"away": 0, "home": 0},
+    }
+
+
+def build_state_payload(request: Request) -> dict[str, Any]:
+    """Build full app state from DB + current game payload."""
+    participants = fetch_participants_with_totals(request.app.state.db)
+    return {
+        "game": build_game_placeholder(),
+        "participants": participants,
         "connection": {"status": "ok"},
         "updatedAt": datetime.now(UTC).isoformat(),
     }
 
 
 @asynccontextmanager
-async def lifespan(_: FastAPI):
+async def lifespan(app: FastAPI):
     """Create DB schema during process startup."""
     conn = connect()
     initialize_schema(conn)
-    _.state.db = conn
+    app.state.db = conn
     try:
         yield
     finally:
@@ -72,14 +84,18 @@ app = FastAPI(title="9-9-9 Challenge API", lifespan=lifespan)
 
 
 @app.get("/api/state")
-def get_state() -> dict[str, Any]:
-    """Return current scoreboard state payload (placeholder for now)."""
-    return build_canned_state()
+async def get_state(request: Request) -> dict[str, Any]:
+    """Return current scoreboard state payload."""
+    return build_state_payload(request)
 
 
 @app.post("/api/register")
-def register(payload: RegisterRequest) -> dict[str, Any]:
-    """Accept registration payload and return a canned acknowledgement."""
+async def register(payload: RegisterRequest, request: Request) -> dict[str, Any]:
+    """Register or rename a participant mapped to an NFC UID."""
+    upsert_participant(request.app.state.db, payload.uid.strip(), payload.name.strip())
+    state = build_state_payload(request)
+    await manager.broadcast({"type": "state", "state": state})
+
     return {
         "ok": True,
         "uid": payload.uid,
@@ -89,13 +105,20 @@ def register(payload: RegisterRequest) -> dict[str, Any]:
 
 
 @app.post("/api/tap")
-def tap(payload: TapRequest) -> dict[str, Any]:
-    """Accept tap payload and return a canned acknowledgement."""
+async def tap(payload: TapRequest, request: Request) -> dict[str, Any]:
+    """Record a tap event and fan it out over WebSocket."""
+    if not participant_exists(request.app.state.db, payload.uid):
+        raise HTTPException(status_code=404, detail="Unknown UID. Register first.")
+
+    tap_event = record_tap(request.app.state.db, payload.uid, payload.station)
+    state = build_state_payload(request)
+
+    await manager.broadcast({"type": "tap", "tap": tap_event})
+    await manager.broadcast({"type": "state", "state": state})
+
     return {
         "ok": True,
-        "uid": payload.uid,
-        "station": payload.station,
-        "status": "accepted",
+        "tap": tap_event,
     }
 
 
@@ -108,6 +131,4 @@ async def websocket_endpoint(websocket: WebSocket) -> None:
             # Keep reading so disconnects are observed promptly.
             await websocket.receive_text()
     except WebSocketDisconnect:
-        await manager.disconnect(websocket)
-    except sqlite3.Error:
         await manager.disconnect(websocket)

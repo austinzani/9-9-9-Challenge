@@ -9,8 +9,14 @@ CREATE TABLE IF NOT EXISTS taps (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   uid TEXT NOT NULL,
   station TEXT NOT NULL CHECK (station IN ('hotdog', 'beer')),
+  source TEXT NOT NULL DEFAULT 'nfc',
   tapped_at TEXT NOT NULL DEFAULT (datetime('now')),
-  FOREIGN KEY(uid) REFERENCES participants(uid)
+  FOREIGN KEY(uid) REFERENCES participants(uid) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS event_meta (
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
 );
 
 CREATE INDEX IF NOT EXISTS idx_taps_uid_time ON taps(uid, tapped_at DESC);
