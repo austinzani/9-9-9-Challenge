@@ -6,7 +6,8 @@ from contextlib import asynccontextmanager
 from datetime import UTC, datetime
 from typing import Any, Literal
 
-from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, status
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
 from pi.api.db import (
@@ -14,8 +15,9 @@ from pi.api.db import (
     fetch_participants_with_totals,
     initialize_schema,
     participant_exists,
+    queue_pending_registration,
     record_tap,
-    upsert_participant,
+    register_and_consume_pending,
 )
 from pi.api.ws import ConnectionManager
 
@@ -91,24 +93,42 @@ async def get_state(request: Request) -> dict[str, Any]:
 
 @app.post("/api/register")
 async def register(payload: RegisterRequest, request: Request) -> dict[str, Any]:
-    """Register or rename a participant mapped to an NFC UID."""
-    upsert_participant(request.app.state.db, payload.uid.strip(), payload.name.strip())
+    """Register a participant and atomically consume any pending unknown taps."""
+    result = register_and_consume_pending(
+        request.app.state.db,
+        payload.uid.strip(),
+        payload.name.strip(),
+    )
     state = build_state_payload(request)
+    await manager.broadcast({"type": "registration_resolved", "registration": result})
     await manager.broadcast({"type": "state", "state": state})
 
     return {
         "ok": True,
-        "uid": payload.uid,
-        "name": payload.name,
-        "status": "registered",
+        **result,
     }
 
 
 @app.post("/api/tap")
-async def tap(payload: TapRequest, request: Request) -> dict[str, Any]:
+async def tap(payload: TapRequest, request: Request) -> Any:
     """Record a tap event and fan it out over WebSocket."""
     if not participant_exists(request.app.state.db, payload.uid):
-        raise HTTPException(status_code=404, detail="Unknown UID. Register first.")
+        pending = queue_pending_registration(request.app.state.db, payload.uid, payload.station)
+        registration_needed = {
+            **pending,
+            "station": payload.station,
+        }
+        await manager.broadcast(
+            {"type": "registration_needed", "registration": registration_needed}
+        )
+        return JSONResponse(
+            status_code=status.HTTP_202_ACCEPTED,
+            content={
+                "ok": False,
+                "registrationRequired": True,
+                "registration": registration_needed,
+            },
+        )
 
     tap_event = record_tap(request.app.state.db, payload.uid, payload.station)
     state = build_state_payload(request)

@@ -81,6 +81,106 @@ def record_tap(conn: sqlite3.Connection, uid: str, station: Station, source: str
     }
 
 
+def queue_pending_registration(conn: sqlite3.Connection, uid: str, station: Station) -> dict:
+    """Queue an unknown UID tap until a participant name is submitted."""
+    hotdog_inc = 1 if station == "hotdog" else 0
+    beer_inc = 1 if station == "beer" else 0
+
+    with _DB_LOCK:
+        conn.execute(
+            """
+            INSERT INTO pending_registrations(uid, hotdog_pending, beer_pending)
+            VALUES(?, ?, ?)
+            ON CONFLICT(uid) DO UPDATE SET
+              hotdog_pending = hotdog_pending + excluded.hotdog_pending,
+              beer_pending = beer_pending + excluded.beer_pending,
+              updated_at = datetime('now')
+            """,
+            (uid, hotdog_inc, beer_inc),
+        )
+        row = conn.execute(
+            """
+            SELECT uid, hotdog_pending, beer_pending, requested_at, updated_at
+            FROM pending_registrations
+            WHERE uid = ?
+            """,
+            (uid,),
+        ).fetchone()
+        conn.commit()
+
+    if row is None:
+        raise RuntimeError("Failed to queue pending registration")
+
+    return {
+        "uid": row["uid"],
+        "hotdogPending": int(row["hotdog_pending"]),
+        "beerPending": int(row["beer_pending"]),
+        "requestedAt": row["requested_at"],
+        "updatedAt": row["updated_at"],
+    }
+
+
+def register_and_consume_pending(conn: sqlite3.Connection, uid: str, name: str) -> dict:
+    """
+    Register a participant exactly once and atomically credit pending taps.
+
+    The first successful registrant wins. Subsequent submissions for the same UID
+    return the already-registered name and do not recalculate taps.
+    """
+    with _DB_LOCK:
+        conn.execute("BEGIN IMMEDIATE")
+
+        existing = conn.execute(
+            "SELECT uid, name FROM participants WHERE uid = ?",
+            (uid,),
+        ).fetchone()
+
+        if existing is None:
+            conn.execute(
+                "INSERT INTO participants(uid, name) VALUES(?, ?)",
+                (uid, name),
+            )
+            status = "registered"
+            winner_name = name
+        else:
+            status = "already_registered"
+            winner_name = existing["name"]
+
+        pending = conn.execute(
+            "SELECT hotdog_pending, beer_pending FROM pending_registrations WHERE uid = ?",
+            (uid,),
+        ).fetchone()
+
+        credited_hotdog = 0
+        credited_beer = 0
+
+        if pending is not None and status == "registered":
+            credited_hotdog = int(pending["hotdog_pending"])
+            credited_beer = int(pending["beer_pending"])
+
+            if credited_hotdog:
+                conn.executemany(
+                    "INSERT INTO taps(uid, station, source) VALUES(?, 'hotdog', 'register')",
+                    [(uid,) for _ in range(credited_hotdog)],
+                )
+            if credited_beer:
+                conn.executemany(
+                    "INSERT INTO taps(uid, station, source) VALUES(?, 'beer', 'register')",
+                    [(uid,) for _ in range(credited_beer)],
+                )
+
+        conn.execute("DELETE FROM pending_registrations WHERE uid = ?", (uid,))
+        conn.commit()
+
+    return {
+        "status": status,
+        "uid": uid,
+        "name": winner_name,
+        "creditedHotdogs": credited_hotdog,
+        "creditedBeers": credited_beer,
+    }
+
+
 def fetch_participants_with_totals(conn: sqlite3.Connection) -> list[dict]:
     """Return participants with hotdog/beer counters used by the scoreboard."""
     query = """

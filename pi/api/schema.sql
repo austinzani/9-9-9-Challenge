@@ -14,6 +14,14 @@ CREATE TABLE IF NOT EXISTS taps (
   FOREIGN KEY(uid) REFERENCES participants(uid) ON DELETE CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS pending_registrations (
+  uid TEXT PRIMARY KEY,
+  hotdog_pending INTEGER NOT NULL DEFAULT 0,
+  beer_pending INTEGER NOT NULL DEFAULT 0,
+  requested_at TEXT NOT NULL DEFAULT (datetime('now')),
+  updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
 CREATE TABLE IF NOT EXISTS event_meta (
   key TEXT PRIMARY KEY,
   value TEXT NOT NULL
