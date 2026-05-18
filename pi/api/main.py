@@ -2,14 +2,16 @@
 
 from __future__ import annotations
 
-from contextlib import asynccontextmanager
-from datetime import UTC, datetime
+import asyncio
+import os
+from contextlib import asynccontextmanager, suppress
 from typing import Any, Literal
 
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, status
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
+from pi.api.admin import router as admin_router
 from pi.api.db import (
     connect,
     fetch_participants_with_totals,
@@ -19,6 +21,7 @@ from pi.api.db import (
     record_tap,
     register_and_consume_pending,
 )
+from pi.api.mlb import MlbPoller, default_game_state, utc_iso_now
 from pi.api.ws import ConnectionManager
 
 
@@ -39,56 +42,63 @@ class TapRequest(BaseModel):
 manager = ConnectionManager()
 
 
-def build_game_placeholder() -> dict[str, Any]:
-    """Return a static linescore shape until poller integration is wired in."""
+def build_state_payload_from_app(app: FastAPI) -> dict[str, Any]:
+    """Build full app state from DB and latest poller/admin game payload."""
+    participants = fetch_participants_with_totals(app.state.db)
     return {
-        "awayAbbr": "CHC",
-        "awayName": "CUBS",
-        "homeAbbr": "CIN",
-        "homeName": "REDS",
-        "inningOrdinal": "1st",
-        "inningState": "Top",
-        "abstractState": "Preview",
-        "innings": {
-            "away": [None] * 9,
-            "home": [None] * 9,
-        },
-        "R": {"away": 0, "home": 0},
-        "H": {"away": 0, "home": 0},
-        "E": {"away": 0, "home": 0},
-    }
-
-
-def build_state_payload(request: Request) -> dict[str, Any]:
-    """Build full app state from DB + current game payload."""
-    participants = fetch_participants_with_totals(request.app.state.db)
-    return {
-        "game": build_game_placeholder(),
+        "game": app.state.game_state,
         "participants": participants,
         "connection": {"status": "ok"},
-        "updatedAt": datetime.now(UTC).isoformat(),
+        "updatedAt": utc_iso_now(),
     }
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Create DB schema during process startup."""
+    """Create DB schema and background poll tasks during process startup."""
     conn = connect()
     initialize_schema(conn)
+
+    team_id = int(os.getenv("MLB_TEAM_ID", "113"))
+    game_date = os.getenv("MLB_GAME_DATE", "2026-05-31")
+
+    poller = MlbPoller(team_id=team_id, game_date=game_date)
+
     app.state.db = conn
+    app.state.poller = poller
+    app.state.game_state = default_game_state()
+    app.state.ws_manager = manager
+    app.state.build_state_payload = build_state_payload_from_app
+
+    async def on_game_update(game: dict[str, Any]) -> None:
+        # Skip broadcasts while admin override is pinned.
+        if poller.manual_override is not None:
+            return
+
+        app.state.game_state = game
+        state = build_state_payload_from_app(app)
+        await manager.broadcast({"type": "state", "state": state})
+
+    poller_task = asyncio.create_task(poller.run(on_game_update), name="mlb-poller")
+
     try:
         yield
     finally:
+        poller_task.cancel()
+        with suppress(asyncio.CancelledError):
+            await poller_task
+        await poller.close()
         conn.close()
 
 
 app = FastAPI(title="9-9-9 Challenge API", lifespan=lifespan)
+app.include_router(admin_router)
 
 
 @app.get("/api/state")
 async def get_state(request: Request) -> dict[str, Any]:
     """Return current scoreboard state payload."""
-    return build_state_payload(request)
+    return build_state_payload_from_app(request.app)
 
 
 @app.post("/api/register")
@@ -99,7 +109,7 @@ async def register(payload: RegisterRequest, request: Request) -> dict[str, Any]
         payload.uid.strip(),
         payload.name.strip(),
     )
-    state = build_state_payload(request)
+    state = build_state_payload_from_app(request.app)
     await manager.broadcast({"type": "registration_resolved", "registration": result})
     await manager.broadcast({"type": "state", "state": state})
 
@@ -131,7 +141,7 @@ async def tap(payload: TapRequest, request: Request) -> Any:
         )
 
     tap_event = record_tap(request.app.state.db, payload.uid, payload.station)
-    state = build_state_payload(request)
+    state = build_state_payload_from_app(request.app)
 
     await manager.broadcast({"type": "tap", "tap": tap_event})
     await manager.broadcast({"type": "state", "state": state})
