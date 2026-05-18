@@ -1,12 +1,14 @@
 interface IconProps {
-  size?: number;
+  size?: number | string;
   color?: string;
 }
 
 /** Hot dog glyph styled for scoreboard paint look. */
 export function HotdogIcon({ size = 26, color = '#f0e6c8' }: IconProps) {
+  const height = typeof size === 'number' ? size * 0.65 : `calc(${size} * 0.65)`;
+
   return (
-    <svg width={size} height={size * 0.65} viewBox="0 0 40 26" style={{ display: 'block' }}>
+    <svg width={size} height={height} viewBox="0 0 40 26" style={{ display: 'block' }}>
       <rect x="2" y="6" width="36" height="14" rx="7" fill="none" stroke={color} strokeWidth="2.2" />
       <rect x="6" y="9" width="28" height="8" rx="4" fill={color} />
       <path
@@ -23,8 +25,10 @@ export function HotdogIcon({ size = 26, color = '#f0e6c8' }: IconProps) {
 
 /** Beer mug glyph styled for scoreboard paint look. */
 export function BeerIcon({ size = 26, color = '#f0e6c8' }: IconProps) {
+  const width = typeof size === 'number' ? size * 0.85 : `calc(${size} * 0.85)`;
+
   return (
-    <svg width={size * 0.85} height={size} viewBox="0 0 28 32" style={{ display: 'block' }}>
+    <svg width={width} height={size} viewBox="0 0 28 32" style={{ display: 'block' }}>
       <rect x="3" y="6" width="17" height="22" rx="1.5" fill="none" stroke={color} strokeWidth="2.2" />
       <path
         d="M20 11 h3 a3 3 0 0 1 3 3 v4 a3 3 0 0 1 -3 3 h-3"

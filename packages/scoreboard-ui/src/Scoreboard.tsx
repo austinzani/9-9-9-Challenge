@@ -59,6 +59,7 @@ export function Scoreboard({
         background: palette.bg,
         color: palette.ink,
         minHeight: '100%',
+        containerType: 'inline-size',
         fontFamily: '"Oswald", system-ui, sans-serif',
         backgroundImage: `
           radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px),

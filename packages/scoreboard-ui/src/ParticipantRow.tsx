@@ -30,9 +30,10 @@ export function ParticipantRow({
       ref={refSet(participant.name)}
       style={{
         display: 'grid',
-        gridTemplateColumns: '28px 1fr 54px 54px 54px',
+        gridTemplateColumns:
+          'clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px)',
         alignItems: 'center',
-        padding: '10px 14px',
+        padding: 'clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px)',
         borderBottom: `1px solid ${palette.line}`,
         background:
           showTopHighlight && isLeader
@@ -45,7 +46,7 @@ export function ParticipantRow({
       <div
         style={{
           fontFamily: '"DM Mono", monospace',
-          fontSize: 12,
+          fontSize: 'clamp(12px, 1.3cqi, 34px)',
           color: isLeader ? palette.gold : palette.inkDim,
           fontWeight: 700,
           fontVariantNumeric: 'tabular-nums',
@@ -58,14 +59,14 @@ export function ParticipantRow({
         style={{
           fontFamily: '"Big Shoulders Stencil Display", "Oswald", sans-serif',
           fontWeight: 600,
-          fontSize: 24,
+          fontSize: 'clamp(24px, 2.8cqi, 84px)',
           lineHeight: 1,
           color: palette.ink,
           letterSpacing: '0.01em',
           textTransform: 'uppercase',
           display: 'flex',
           alignItems: 'center',
-          gap: 8,
+          gap: 'clamp(8px, 0.9cqi, 24px)',
         }}
       >
         <span style={{ textShadow: isLeader ? `0 0 14px ${palette.gold}44` : 'none' }}>
@@ -75,11 +76,11 @@ export function ParticipantRow({
           <span
             style={{
               fontFamily: '"DM Mono", monospace',
-              fontSize: 9,
+              fontSize: 'clamp(9px, 0.95cqi, 24px)',
               letterSpacing: '0.16em',
               color: palette.bg,
               background: palette.gold,
-              padding: '2px 5px',
+              padding: 'clamp(2px, 0.3cqi, 8px) clamp(5px, 0.5cqi, 14px)',
               borderRadius: 0,
             }}
           >
@@ -89,11 +90,21 @@ export function ParticipantRow({
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <FlipNumber value={participant.hotdogs} color={palette.ink} size={32} hot={isHot} />
+        <FlipNumber
+          value={participant.hotdogs}
+          color={palette.ink}
+          size="clamp(32px, 3.4cqi, 94px)"
+          hot={isHot}
+        />
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <FlipNumber value={participant.beers} color={palette.ink} size={32} hot={isHot} />
+        <FlipNumber
+          value={participant.beers}
+          color={palette.ink}
+          size="clamp(32px, 3.4cqi, 94px)"
+          hot={isHot}
+        />
       </div>
 
       <div
@@ -101,11 +112,15 @@ export function ParticipantRow({
           textAlign: 'center',
           background: isLeader ? palette.gold : 'transparent',
           color: isLeader ? palette.bg : palette.ink,
-          padding: '4px 0',
-          margin: '0 0 0 6px',
+          padding: 'clamp(4px, 0.5cqi, 14px) 0',
+          margin: '0 0 0 clamp(6px, 0.7cqi, 18px)',
         }}
       >
-        <FlipNumber value={total} color={isLeader ? palette.bg : palette.gold} size={32} />
+        <FlipNumber
+          value={total}
+          color={isLeader ? palette.bg : palette.gold}
+          size="clamp(32px, 3.4cqi, 94px)"
+        />
       </div>
     </div>
   );

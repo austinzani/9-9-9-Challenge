@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 interface FlipNumberProps {
   value: number;
   color: string;
-  size?: number;
+  size?: number | string;
   hot?: boolean;
 }
 

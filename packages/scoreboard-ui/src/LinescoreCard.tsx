@@ -21,12 +21,12 @@ function HealthPill({ label, online, color }: { label: string; online?: boolean;
     <span
       style={{
         fontFamily: '"DM Mono", monospace',
-        fontSize: 9,
+        fontSize: 'clamp(9px, 0.95cqi, 26px)',
         letterSpacing: '0.12em',
         color: isOffline ? '#29120f' : color,
         background: isOffline ? '#f1b4a8' : 'transparent',
         border: isOffline ? '1px solid rgba(0,0,0,0.2)' : 'none',
-        padding: isOffline ? '1px 5px' : 0,
+        padding: isOffline ? 'clamp(1px, 0.2cqi, 6px) clamp(5px, 0.5cqi, 14px)' : 0,
       }}
     >
       {label}
@@ -47,8 +47,8 @@ export function LinescoreCard({
   const cell = (value: number | null, isTotal = false) => (
     <div
       style={{
-        width: isTotal ? 24 : 20,
-        height: 22,
+        width: isTotal ? 'clamp(24px, 2.4cqi, 72px)' : 'clamp(20px, 2cqi, 60px)',
+        height: 'clamp(22px, 2.3cqi, 66px)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -56,7 +56,7 @@ export function LinescoreCard({
         color: isTotal ? palette.gold : palette.ink,
         fontFamily: '"Big Shoulders Display", sans-serif',
         fontWeight: 700,
-        fontSize: 16,
+        fontSize: 'clamp(14px, 1.8cqi, 48px)',
         lineHeight: 1,
         fontVariantNumeric: 'tabular-nums',
         borderRight: `1px solid ${palette.line}`,
@@ -77,14 +77,14 @@ export function LinescoreCard({
     <div style={{ display: 'flex', alignItems: 'center', borderTop: `1px solid ${palette.line}` }}>
       <div
         style={{
-          width: 48,
-          height: 22,
+          width: 'clamp(48px, 4.8cqi, 140px)',
+          height: 'clamp(22px, 2.3cqi, 66px)',
           display: 'flex',
           alignItems: 'center',
-          paddingLeft: 8,
+          paddingLeft: 'clamp(8px, 0.9cqi, 24px)',
           fontFamily: '"Big Shoulders Stencil Display", sans-serif',
           fontWeight: 700,
-          fontSize: 16,
+          fontSize: 'clamp(14px, 1.8cqi, 48px)',
           color: palette.ink,
           background: accent ? `${palette.accent}33` : 'transparent',
           borderRight: `1px solid ${palette.line}`,
@@ -104,7 +104,7 @@ export function LinescoreCard({
   const headerRight: CSSProperties = {
     display: 'flex',
     alignItems: 'center',
-    gap: 8,
+    gap: 'clamp(8px, 0.8cqi, 24px)',
   };
 
   return (
@@ -112,7 +112,7 @@ export function LinescoreCard({
       style={{
         background: palette.panelDeep,
         borderBottom: `2px solid ${palette.line}`,
-        padding: `${topInset}px 8px 10px`,
+        padding: `calc(${topInset}px + env(safe-area-inset-top, 0px)) clamp(8px, 1cqi, 26px) clamp(10px, 1.2cqi, 32px)`,
       }}
     >
       <div
@@ -120,9 +120,9 @@ export function LinescoreCard({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: '0 6px 8px',
+          padding: '0 clamp(6px, 0.8cqi, 20px) clamp(8px, 1cqi, 24px)',
           fontFamily: '"DM Mono", monospace',
-          fontSize: 10,
+          fontSize: 'clamp(10px, 1.05cqi, 30px)',
           letterSpacing: '0.18em',
           color: palette.inkDim,
         }}
@@ -139,18 +139,24 @@ export function LinescoreCard({
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', border: `1px solid ${palette.line}`, background: palette.bg }}>
-        <div style={{ width: 48, height: 18, borderRight: `1px solid ${palette.line}` }} />
+        <div
+          style={{
+            width: 'clamp(48px, 4.8cqi, 140px)',
+            height: 'clamp(18px, 1.9cqi, 56px)',
+            borderRight: `1px solid ${palette.line}`,
+          }}
+        />
         {inningNumbers.map((inningNumber) => (
           <div
             key={`inning-${inningNumber}`}
             style={{
-              width: 20,
-              height: 18,
+              width: 'clamp(20px, 2cqi, 60px)',
+              height: 'clamp(18px, 1.9cqi, 56px)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               fontFamily: '"DM Mono", monospace',
-              fontSize: 10,
+              fontSize: 'clamp(10px, 1.05cqi, 30px)',
               color: palette.inkDim,
               borderRight: `1px solid ${palette.line}`,
             }}
@@ -163,13 +169,13 @@ export function LinescoreCard({
           <div
             key={`total-${label}`}
             style={{
-              width: 24,
-              height: 18,
+              width: 'clamp(24px, 2.4cqi, 72px)',
+              height: 'clamp(18px, 1.9cqi, 56px)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               fontFamily: '"DM Mono", monospace',
-              fontSize: 10,
+              fontSize: 'clamp(10px, 1.05cqi, 30px)',
               color: palette.gold,
               fontWeight: 700,
               borderRight: `1px solid ${palette.line}`,
