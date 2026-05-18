@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "challenge-pi"
+version = "0.1.0"
+description = "Pi API and NFC services for the 9-9-9 challenge"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn[standard]>=0.31.0",
+  "httpx>=0.28.0",
+  "python-dotenv>=1.0.1",
+  "nfcpy>=1.0.4",
+  "pyserial>=3.5"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+  "pytest-asyncio>=0.24.0"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["pi*"]

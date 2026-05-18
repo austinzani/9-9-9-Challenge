@@ -1,0 +1,19 @@
+{
+  "name": "9-9-9-challenge",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.13.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

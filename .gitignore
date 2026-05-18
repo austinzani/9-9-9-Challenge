@@ -1,0 +1,25 @@
+# Node
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+.storybook-out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Local data
+*.sqlite
+*.sqlite3
+archive/
+
+# Tooling
+.DS_Store
+.env
+.env.*
+!.env.example
