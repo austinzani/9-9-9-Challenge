@@ -92,6 +92,15 @@ test('applies state + tap websocket events and reorders leaderboard', async ({ p
   await expect(page.getByText('ALICE')).toBeVisible();
   await expect(page.getByText('BOB')).toBeVisible();
 
-  const firstName = page.locator('div').filter({ hasText: /^01/ }).first();
-  await expect(firstName).toContainText('BOB');
+  const bobName = page.locator('span').filter({ hasText: /^Bob$/ }).first();
+  const aliceName = page.locator('span').filter({ hasText: /^Alice$/ }).first();
+
+  await expect.poll(async () => {
+    const bobBox = await bobName.boundingBox();
+    const aliceBox = await aliceName.boundingBox();
+    if (!bobBox || !aliceBox) {
+      return Number.POSITIVE_INFINITY;
+    }
+    return bobBox.y - aliceBox.y;
+  }).toBeLessThan(0);
 });
