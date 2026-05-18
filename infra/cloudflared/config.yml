@@ -1,0 +1,18 @@
+# Cloudflare Tunnel ingress for the Pi-hosted API.
+#
+# `api.999.austinzani.dev` is public for scoreboard reads + websocket updates.
+# Admin paths are explicitly blocked at the tunnel edge so `/admin` and
+# `/api/admin/*` remain localhost-only.
+tunnel: 999-challenge
+credentials-file: /etc/cloudflared/999-challenge.json
+
+ingress:
+  - hostname: api.999.austinzani.dev
+    path: /admin*
+    service: http_status:404
+  - hostname: api.999.austinzani.dev
+    path: /api/admin*
+    service: http_status:404
+  - hostname: api.999.austinzani.dev
+    service: http://localhost:8000
+  - service: http_status:404

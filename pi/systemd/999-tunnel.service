@@ -1,0 +1,14 @@
+[Unit]
+Description=9-9-9 Challenge Cloudflare Tunnel
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/local/bin/cloudflared --config /opt/999/infra/cloudflared/config.yml tunnel run
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
