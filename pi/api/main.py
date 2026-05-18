@@ -5,11 +5,13 @@ from __future__ import annotations
 import asyncio
 import os
 from contextlib import asynccontextmanager, suppress
+from pathlib import Path
 from typing import Any, Literal
 
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from pi.api.admin import router as admin_router
@@ -176,3 +178,14 @@ async def websocket_endpoint(websocket: WebSocket) -> None:
             await websocket.receive_text()
     except WebSocketDisconnect:
         await manager.disconnect(websocket)
+
+
+scoreboard_dist_dir = Path(
+    os.getenv("SCOREBOARD_DIST_DIR", "apps/scoreboard-web/dist")
+).resolve()
+if scoreboard_dist_dir.exists():
+    app.mount(
+        "/",
+        StaticFiles(directory=scoreboard_dist_dir, html=True),
+        name="scoreboard-web",
+    )
