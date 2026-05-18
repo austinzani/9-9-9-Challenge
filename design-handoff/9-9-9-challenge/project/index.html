@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9-9-9 Challenge — Scoreboard</title>
+
+<!-- Painted-stencil scoreboard type + condensed body + monospace -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@600;700;800&family=Oswald:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+  html, body { margin: 0; padding: 0; min-height: 100%; }
+  body {
+    background: #d9d2c4;
+    /* warm cream backdrop, slight stadium feel */
+    background-image:
+      radial-gradient(ellipse at top, #e6dfd0 0%, #c9c0ad 70%, #b5ac98 100%);
+    font-family: 'Oswald', system-ui, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  #stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  /* Hide scrollbars inside the phone for a cleaner look (still scrollable) */
+  .phone-scroll::-webkit-scrollbar { width: 0; background: transparent; }
+</style>
+</head>
+<body>
+
+<div id="stage"></div>
+
+<!-- Tweak defaults — host can persist via __edit_mode_set_keys -->
+<script>
+window.TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "palette": "green",
+  "headerStyle": "linescore",
+  "showTopHighlight": true
+}/*EDITMODE-END*/;
+</script>
+
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="scoreboard.jsx"></script>
+
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+function App() {
+  const [tweaks, setTweak] = useTweaks(window.TWEAK_DEFAULTS);
+
+  return (
+    <>
+      <IOSDevice width={402} height={874} dark={true}>
+        <div className="phone-scroll" style={{
+          width: '100%', height: '100%', overflowY: 'auto',
+          background: (window.PALETTES[tweaks.palette] || window.PALETTES.green).bg,
+        }}>
+          <Scoreboard tweaks={tweaks} />
+        </div>
+      </IOSDevice>
+
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Scoreboard">
+          <TweakRadio
+            label="Palette"
+            value={tweaks.palette}
+            onChange={(v) => setTweak('palette', v)}
+            options={[
+              { value: 'green', label: 'Green' },
+              { value: 'charcoal', label: 'Charcoal' },
+              { value: 'brick', label: 'Brick' },
+            ]}
+          />
+          <TweakRadio
+            label="Game header"
+            value={tweaks.headerStyle}
+            onChange={(v) => setTweak('headerStyle', v)}
+            options={[
+              { value: 'compact', label: 'Compact' },
+              { value: 'linescore', label: 'Linescore' },
+            ]}
+          />
+        </TweakSection>
+
+        <TweakSection label="Simulate a tap">
+          <div style={{ display: 'flex', gap: 8, padding: '0 14px 8px' }}>
+            <TweakButton label="🌭 +1 Hot dog" onClick={() => window.__simulateTap && window.__simulateTap('hotdog')} />
+            <TweakButton label="🍺 +1 Beer" secondary onClick={() => window.__simulateTap && window.__simulateTap('beer')} />
+          </div>
+          <div style={{
+            fontSize: 11, color: '#888', padding: '0 14px 12px', lineHeight: 1.4,
+          }}>
+            Bumps a random participant — watch the row reorder.
+          </div>
+        </TweakSection>
+      </TweaksPanel>
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('stage'));
+root.render(<App />);
+</script>
+
+</body>
+</html>
