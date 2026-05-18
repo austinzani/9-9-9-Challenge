@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 
 import { Scoreboard } from '@challenge/scoreboard-ui';
 
@@ -20,10 +20,21 @@ export function App() {
     initialParticipants: INITIAL_PARTICIPANTS,
   });
 
-  const topInset = useMemo(() => {
+  const isKioskMode = useMemo(() => {
     const mode = new URLSearchParams(window.location.search).get('mode');
-    return mode === 'kiosk' ? 12 : 54;
+    return mode === 'kiosk';
   }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle('kiosk', isKioskMode);
+    return () => {
+      document.body.classList.remove('kiosk');
+    };
+  }, [isKioskMode]);
+
+  const topInset = useMemo(() => {
+    return isKioskMode ? 12 : 54;
+  }, [isKioskMode]);
 
   return (
     <>
@@ -35,6 +46,7 @@ export function App() {
               game={game}
               showTopHighlight
               qrUrl="999.austinzani.dev"
+              showQrUrl={!isKioskMode}
               connectionState={connectionState}
               topInset={topInset}
               hotName={hotName}

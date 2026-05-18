@@ -16,6 +16,7 @@ export interface ScoreboardProps {
   readerHealth?: ReaderHealth;
   showTopHighlight?: boolean;
   qrUrl?: string;
+  showQrUrl?: boolean;
   topInset?: number;
 }
 
@@ -33,6 +34,7 @@ export function Scoreboard({
   readerHealth,
   showTopHighlight = true,
   qrUrl,
+  showQrUrl = true,
   topInset = 54,
 }: ScoreboardProps) {
   const palette = PALETTES.green;
@@ -93,7 +95,7 @@ export function Scoreboard({
         ))}
       </div>
 
-      <Footer palette={palette} qrUrl={qrUrl} />
+      <Footer palette={palette} qrUrl={qrUrl} showQrUrl={showQrUrl} />
     </div>
   );
 }

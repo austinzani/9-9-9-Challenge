@@ -3,10 +3,11 @@ import type { Palette } from './palettes';
 interface FooterProps {
   palette: Palette;
   qrUrl?: string;
+  showQrUrl?: boolean;
 }
 
 /** Footer with event stamp and public URL for remote viewers. */
-export function Footer({ palette, qrUrl = '999.austinzani.dev' }: FooterProps) {
+export function Footer({ palette, qrUrl = '999.austinzani.dev', showQrUrl = true }: FooterProps) {
   return (
     <div
       style={{
@@ -21,7 +22,7 @@ export function Footer({ palette, qrUrl = '999.austinzani.dev' }: FooterProps) {
       }}
     >
       <div style={{ marginBottom: 'clamp(4px, 0.5cqi, 14px)' }}>9·9·9 CHALLENGE — MAY 31, 2026</div>
-      <div style={{ color: palette.gold }}>{qrUrl.toUpperCase()}</div>
+      {showQrUrl && <div style={{ color: palette.gold }}>{qrUrl.toUpperCase()}</div>}
     </div>
   );
 }

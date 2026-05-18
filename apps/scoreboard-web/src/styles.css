@@ -42,3 +42,18 @@ body {
   width: 0;
   background: transparent;
 }
+
+body.kiosk {
+  background: #000;
+}
+
+body.kiosk #stage {
+  min-height: 100vh;
+  padding: 0;
+}
+
+body.kiosk #phone-preview {
+  width: 100vw;
+  height: 100vh;
+  box-shadow: none;
+}

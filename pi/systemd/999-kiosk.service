@@ -1,0 +1,16 @@
+[Unit]
+Description=9-9-9 Challenge Kiosk Display
+After=network-online.target graphical.target 999-api.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/bin/bash /opt/999/pi/scripts/launch-kiosk.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=graphical.target
