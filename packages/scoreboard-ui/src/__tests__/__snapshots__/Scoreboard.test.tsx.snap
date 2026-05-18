@@ -1,0 +1,1648 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
+<div
+  style="width: 3840px; height: 2160px;"
+>
+  <div
+    style="background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto;"
+  >
+    <div
+      style="position: sticky; top: 0px; z-index: 5; background: rgb(29, 66, 51);"
+    >
+      <div
+        style="background: rgb(23, 53, 39); border-bottom: 2px solid rgb(14, 36, 25); padding: calc(54px + env(0px * , * safe-area-inset-top)) clamp(8px, 1cqi, 26px) clamp(10px, 1.2cqi, 32px);"
+      >
+        <div
+          style="display: flex; align-items: center; justify-content: space-between; padding: 0px clamp(6px, 0.8cqi, 20px) clamp(8px, 1cqi, 24px); font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
+        >
+          <span>
+            ● LIVE ·
+             
+            BOTTOM
+             
+            6TH
+          </span>
+          <span
+            style="display: flex; align-items: center; gap: clamp(8px, 0.8cqi, 24px);"
+          >
+            <span>
+              GABP
+            </span>
+          </span>
+        </div>
+        <div
+          style="display: flex; align-items: center; border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
+        >
+          <div
+            style="width: clamp(48px, 4.8cqi, 140px); height: clamp(18px, 1.9cqi, 56px); border-right: 1px solid rgb(14, 36, 25);"
+          />
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            1
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            2
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            3
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            4
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            5
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            6
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            7
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            8
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            9
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            R
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            H
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            E
+          </div>
+        </div>
+        <div
+          style="border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
+        >
+          <div
+            style="display: flex; align-items: center; border-top: 1px solid rgb(14, 36, 25);"
+          >
+            <div
+              style="width: clamp(48px, 4.8cqi, 140px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; padding-left: clamp(8px, 0.9cqi, 24px); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); color: rgb(240, 230, 200); background: transparent; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              CHC
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                3
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              3
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              5
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              0
+            </div>
+          </div>
+          <div
+            style="display: flex; align-items: center; border-top: 1px solid rgb(14, 36, 25);"
+          >
+            <div
+              style="width: clamp(48px, 4.8cqi, 140px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; padding-left: clamp(8px, 0.9cqi, 24px); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2); border-right: 1px solid rgb(14, 36, 25);"
+            >
+              CIN
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                2
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                1
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              3
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              6
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(10px, 1.2cqi, 36px) clamp(14px, 1.6cqi, 44px) clamp(8px, 1cqi, 28px); background: rgb(35, 76, 58); border-top: 1px solid rgb(14, 36, 25); border-bottom: 2px solid rgb(14, 36, 25); box-shadow: 0 4px 0 0 #1d4233, 0 6px 10px -4px rgba(0,0,0,0.4);"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+        >
+          #
+        </div>
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+        >
+          PLAYER
+        </div>
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <svg
+            height="calc(clamp(26px, 2.7cqi, 82px) * 0.65)"
+            style="display: block;"
+            viewBox="0 0 40 26"
+            width="clamp(26px, 2.7cqi, 82px)"
+          >
+            <rect
+              fill="none"
+              height="14"
+              rx="7"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+              width="36"
+              x="2"
+              y="6"
+            />
+            <rect
+              fill="#f0e6c8"
+              height="8"
+              rx="4"
+              width="28"
+              x="6"
+              y="9"
+            />
+            <path
+              d="M8 13 L12 11 L16 13 L20 11 L24 13 L28 11 L32 13"
+              fill="none"
+              stroke="#1d4233"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.6"
+            />
+          </svg>
+        </div>
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <svg
+            height="clamp(22px, 2.3cqi, 70px)"
+            style="display: block;"
+            viewBox="0 0 28 32"
+            width="calc(clamp(22px, 2.3cqi, 70px) * 0.85)"
+          >
+            <rect
+              fill="none"
+              height="22"
+              rx="1.5"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+              width="17"
+              x="3"
+              y="6"
+            />
+            <path
+              d="M20 11 h3 a3 3 0 0 1 3 3 v4 a3 3 0 0 1 -3 3 h-3"
+              fill="none"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+            />
+            <path
+              d="M3 9 Q 6 5 9 7 Q 12 4 15 7 Q 18 5 20 8"
+              fill="none"
+              stroke="#f0e6c8"
+              stroke-linecap="round"
+              stroke-width="2.2"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="14"
+              y2="14"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="19"
+              y2="19"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="24"
+              y2="24"
+            />
+          </svg>
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: clamp(16px, 1.9cqi, 54px); text-align: center; letter-spacing: 0.04em; margin-left: clamp(6px, 0.7cqi, 18px);"
+        >
+          TOT
+        </div>
+      </div>
+    </div>
+    <div
+      style="background: rgb(29, 66, 51);"
+    >
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: linear-gradient(90deg, #d6a23a22 0%, transparent 80%); position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          01
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: 0 0 14px #d6a23a44;"
+          >
+            Austin
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            3
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            7
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          02
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: none;"
+          >
+            Aron
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            2
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            6
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          03
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: none;"
+          >
+            Jefferson
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            1
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            3
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      style="padding: clamp(16px, 1.8cqi, 54px) clamp(16px, 1.8cqi, 48px) clamp(28px, 2.8cqi, 80px); text-align: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
+    >
+      <div
+        style="margin-bottom: clamp(4px, 0.5cqi, 14px);"
+      >
+        9·9·9 CHALLENGE — MAY 31, 2026
+      </div>
+      <div
+        style="color: rgb(214, 162, 58);"
+      >
+        999.AUSTINZANI.DEV
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
+<div
+  style="width: 1920px; height: 1080px;"
+>
+  <div
+    style="background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto;"
+  >
+    <div
+      style="position: sticky; top: 0px; z-index: 5; background: rgb(29, 66, 51);"
+    >
+      <div
+        style="background: rgb(23, 53, 39); border-bottom: 2px solid rgb(14, 36, 25); padding: calc(54px + env(0px * , * safe-area-inset-top)) clamp(8px, 1cqi, 26px) clamp(10px, 1.2cqi, 32px);"
+      >
+        <div
+          style="display: flex; align-items: center; justify-content: space-between; padding: 0px clamp(6px, 0.8cqi, 20px) clamp(8px, 1cqi, 24px); font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
+        >
+          <span>
+            ● LIVE ·
+             
+            BOTTOM
+             
+            6TH
+          </span>
+          <span
+            style="display: flex; align-items: center; gap: clamp(8px, 0.8cqi, 24px);"
+          >
+            <span>
+              GABP
+            </span>
+          </span>
+        </div>
+        <div
+          style="display: flex; align-items: center; border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
+        >
+          <div
+            style="width: clamp(48px, 4.8cqi, 140px); height: clamp(18px, 1.9cqi, 56px); border-right: 1px solid rgb(14, 36, 25);"
+          />
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            1
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            2
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            3
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            4
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            5
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            6
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            7
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            8
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            9
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            R
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            H
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            E
+          </div>
+        </div>
+        <div
+          style="border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
+        >
+          <div
+            style="display: flex; align-items: center; border-top: 1px solid rgb(14, 36, 25);"
+          >
+            <div
+              style="width: clamp(48px, 4.8cqi, 140px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; padding-left: clamp(8px, 0.9cqi, 24px); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); color: rgb(240, 230, 200); background: transparent; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              CHC
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                3
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              3
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              5
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              0
+            </div>
+          </div>
+          <div
+            style="display: flex; align-items: center; border-top: 1px solid rgb(14, 36, 25);"
+          >
+            <div
+              style="width: clamp(48px, 4.8cqi, 140px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; padding-left: clamp(8px, 0.9cqi, 24px); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2); border-right: 1px solid rgb(14, 36, 25);"
+            >
+              CIN
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                2
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                1
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              3
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              6
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(10px, 1.2cqi, 36px) clamp(14px, 1.6cqi, 44px) clamp(8px, 1cqi, 28px); background: rgb(35, 76, 58); border-top: 1px solid rgb(14, 36, 25); border-bottom: 2px solid rgb(14, 36, 25); box-shadow: 0 4px 0 0 #1d4233, 0 6px 10px -4px rgba(0,0,0,0.4);"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+        >
+          #
+        </div>
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+        >
+          PLAYER
+        </div>
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <svg
+            height="calc(clamp(26px, 2.7cqi, 82px) * 0.65)"
+            style="display: block;"
+            viewBox="0 0 40 26"
+            width="clamp(26px, 2.7cqi, 82px)"
+          >
+            <rect
+              fill="none"
+              height="14"
+              rx="7"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+              width="36"
+              x="2"
+              y="6"
+            />
+            <rect
+              fill="#f0e6c8"
+              height="8"
+              rx="4"
+              width="28"
+              x="6"
+              y="9"
+            />
+            <path
+              d="M8 13 L12 11 L16 13 L20 11 L24 13 L28 11 L32 13"
+              fill="none"
+              stroke="#1d4233"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.6"
+            />
+          </svg>
+        </div>
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <svg
+            height="clamp(22px, 2.3cqi, 70px)"
+            style="display: block;"
+            viewBox="0 0 28 32"
+            width="calc(clamp(22px, 2.3cqi, 70px) * 0.85)"
+          >
+            <rect
+              fill="none"
+              height="22"
+              rx="1.5"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+              width="17"
+              x="3"
+              y="6"
+            />
+            <path
+              d="M20 11 h3 a3 3 0 0 1 3 3 v4 a3 3 0 0 1 -3 3 h-3"
+              fill="none"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+            />
+            <path
+              d="M3 9 Q 6 5 9 7 Q 12 4 15 7 Q 18 5 20 8"
+              fill="none"
+              stroke="#f0e6c8"
+              stroke-linecap="round"
+              stroke-width="2.2"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="14"
+              y2="14"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="19"
+              y2="19"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="24"
+              y2="24"
+            />
+          </svg>
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: clamp(16px, 1.9cqi, 54px); text-align: center; letter-spacing: 0.04em; margin-left: clamp(6px, 0.7cqi, 18px);"
+        >
+          TOT
+        </div>
+      </div>
+    </div>
+    <div
+      style="background: rgb(29, 66, 51);"
+    >
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: linear-gradient(90deg, #d6a23a22 0%, transparent 80%); position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          01
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: 0 0 14px #d6a23a44;"
+          >
+            Austin
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            3
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            7
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          02
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: none;"
+          >
+            Aron
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            2
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            6
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          03
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: none;"
+          >
+            Jefferson
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            1
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            3
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      style="padding: clamp(16px, 1.8cqi, 54px) clamp(16px, 1.8cqi, 48px) clamp(28px, 2.8cqi, 80px); text-align: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
+    >
+      <div
+        style="margin-bottom: clamp(4px, 0.5cqi, 14px);"
+      >
+        9·9·9 CHALLENGE — MAY 31, 2026
+      </div>
+      <div
+        style="color: rgb(214, 162, 58);"
+      >
+        999.AUSTINZANI.DEV
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
+<div
+  style="width: 390px; height: 844px;"
+>
+  <div
+    style="background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto;"
+  >
+    <div
+      style="position: sticky; top: 0px; z-index: 5; background: rgb(29, 66, 51);"
+    >
+      <div
+        style="background: rgb(23, 53, 39); border-bottom: 2px solid rgb(14, 36, 25); padding: calc(54px + env(0px * , * safe-area-inset-top)) clamp(8px, 1cqi, 26px) clamp(10px, 1.2cqi, 32px);"
+      >
+        <div
+          style="display: flex; align-items: center; justify-content: space-between; padding: 0px clamp(6px, 0.8cqi, 20px) clamp(8px, 1cqi, 24px); font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
+        >
+          <span>
+            ● LIVE ·
+             
+            BOTTOM
+             
+            6TH
+          </span>
+          <span
+            style="display: flex; align-items: center; gap: clamp(8px, 0.8cqi, 24px);"
+          >
+            <span>
+              GABP
+            </span>
+          </span>
+        </div>
+        <div
+          style="display: flex; align-items: center; border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
+        >
+          <div
+            style="width: clamp(48px, 4.8cqi, 140px); height: clamp(18px, 1.9cqi, 56px); border-right: 1px solid rgb(14, 36, 25);"
+          />
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            1
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            2
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            3
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            4
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            5
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            6
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            7
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            8
+          </div>
+          <div
+            style="width: clamp(20px, 2cqi, 60px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); border-right: 1px solid rgb(14, 36, 25);"
+          >
+            9
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            R
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            H
+          </div>
+          <div
+            style="width: clamp(24px, 2.4cqi, 72px); height: clamp(18px, 1.9cqi, 56px); display: flex; align-items: center; justify-content: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(214, 162, 58); font-weight: 700; border-right: 1px solid rgb(14, 36, 25);"
+          >
+            E
+          </div>
+        </div>
+        <div
+          style="border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
+        >
+          <div
+            style="display: flex; align-items: center; border-top: 1px solid rgb(14, 36, 25);"
+          >
+            <div
+              style="width: clamp(48px, 4.8cqi, 140px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; padding-left: clamp(8px, 0.9cqi, 24px); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); color: rgb(240, 230, 200); background: transparent; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              CHC
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                3
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              3
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              5
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              0
+            </div>
+          </div>
+          <div
+            style="display: flex; align-items: center; border-top: 1px solid rgb(14, 36, 25);"
+          >
+            <div
+              style="width: clamp(48px, 4.8cqi, 140px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; padding-left: clamp(8px, 0.9cqi, 24px); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2); border-right: 1px solid rgb(14, 36, 25);"
+            >
+              CIN
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                2
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                1
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                0
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div>
+              <div
+                style="width: clamp(20px, 2cqi, 60px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: transparent; color: rgb(240, 230, 200); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+              >
+                ·
+              </div>
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              3
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              6
+            </div>
+            <div
+              style="width: clamp(24px, 2.4cqi, 72px); height: clamp(22px, 2.3cqi, 66px); display: flex; align-items: center; justify-content: center; background: rgb(14, 36, 25); color: rgb(214, 162, 58); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, 1.8cqi, 48px); line-height: 1; font-variant-numeric: tabular-nums; border-right: 1px solid rgb(14, 36, 25);"
+            >
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(10px, 1.2cqi, 36px) clamp(14px, 1.6cqi, 44px) clamp(8px, 1cqi, 28px); background: rgb(35, 76, 58); border-top: 1px solid rgb(14, 36, 25); border-bottom: 2px solid rgb(14, 36, 25); box-shadow: 0 4px 0 0 #1d4233, 0 6px 10px -4px rgba(0,0,0,0.4);"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+        >
+          #
+        </div>
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+        >
+          PLAYER
+        </div>
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <svg
+            height="calc(clamp(26px, 2.7cqi, 82px) * 0.65)"
+            style="display: block;"
+            viewBox="0 0 40 26"
+            width="clamp(26px, 2.7cqi, 82px)"
+          >
+            <rect
+              fill="none"
+              height="14"
+              rx="7"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+              width="36"
+              x="2"
+              y="6"
+            />
+            <rect
+              fill="#f0e6c8"
+              height="8"
+              rx="4"
+              width="28"
+              x="6"
+              y="9"
+            />
+            <path
+              d="M8 13 L12 11 L16 13 L20 11 L24 13 L28 11 L32 13"
+              fill="none"
+              stroke="#1d4233"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.6"
+            />
+          </svg>
+        </div>
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <svg
+            height="clamp(22px, 2.3cqi, 70px)"
+            style="display: block;"
+            viewBox="0 0 28 32"
+            width="calc(clamp(22px, 2.3cqi, 70px) * 0.85)"
+          >
+            <rect
+              fill="none"
+              height="22"
+              rx="1.5"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+              width="17"
+              x="3"
+              y="6"
+            />
+            <path
+              d="M20 11 h3 a3 3 0 0 1 3 3 v4 a3 3 0 0 1 -3 3 h-3"
+              fill="none"
+              stroke="#f0e6c8"
+              stroke-width="2.2"
+            />
+            <path
+              d="M3 9 Q 6 5 9 7 Q 12 4 15 7 Q 18 5 20 8"
+              fill="none"
+              stroke="#f0e6c8"
+              stroke-linecap="round"
+              stroke-width="2.2"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="14"
+              y2="14"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="19"
+              y2="19"
+            />
+            <line
+              stroke="#f0e6c8"
+              stroke-width="1.3"
+              x1="6"
+              x2="17"
+              y1="24"
+              y2="24"
+            />
+          </svg>
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: clamp(16px, 1.9cqi, 54px); text-align: center; letter-spacing: 0.04em; margin-left: clamp(6px, 0.7cqi, 18px);"
+        >
+          TOT
+        </div>
+      </div>
+    </div>
+    <div
+      style="background: rgb(29, 66, 51);"
+    >
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: linear-gradient(90deg, #d6a23a22 0%, transparent 80%); position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          01
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: 0 0 14px #d6a23a44;"
+          >
+            Austin
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            3
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            7
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          02
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: none;"
+          >
+            Aron
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            2
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            6
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: grid; grid-template-columns: clamp(28px, 2.8cqi, 96px) 1fr clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px) clamp(54px, 5.2cqi, 152px); align-items: center; padding: clamp(8px, 1.2cqi, 32px) clamp(12px, 1.6cqi, 40px); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
+      >
+        <div
+          style="font-family: "DM Mono", monospace; font-size: clamp(12px, 1.3cqi, 34px); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+        >
+          03
+        </div>
+        <div
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, 2.8cqi, 84px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, 0.9cqi, 24px);"
+        >
+          <span
+            style="text-shadow: none;"
+          >
+            Jefferson
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            1
+          </span>
+        </div>
+        <div
+          style="text-align: center;"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            3
+          </span>
+        </div>
+        <div
+          style="text-align: center; background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, 0.5cqi, 14px) 0px; margin: 0px 0px 0px clamp(6px, 0.7cqi, 18px);"
+        >
+          <span
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, 3.4cqi, 94px); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+          >
+            4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      style="padding: clamp(16px, 1.8cqi, 54px) clamp(16px, 1.8cqi, 48px) clamp(28px, 2.8cqi, 80px); text-align: center; font-family: "DM Mono", monospace; font-size: clamp(10px, 1.05cqi, 30px); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
+    >
+      <div
+        style="margin-bottom: clamp(4px, 0.5cqi, 14px);"
+      >
+        9·9·9 CHALLENGE — MAY 31, 2026
+      </div>
+      <div
+        style="color: rgb(214, 162, 58);"
+      >
+        999.AUSTINZANI.DEV
+      </div>
+    </div>
+  </div>
+</div>
+`;

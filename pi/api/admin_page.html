@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>9·9·9 Admin Console</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "DM Mono", ui-monospace, Menlo, monospace;
+        background: #10271d;
+        color: #f0e6c8;
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1, h2 {
+        font-family: "Big Shoulders Display", "Oswald", sans-serif;
+        letter-spacing: 0.03em;
+        margin: 0 0 10px;
+      }
+      section {
+        border: 1px solid #1f4a37;
+        padding: 14px;
+        margin: 0 0 14px;
+        background: #173527;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 12px;
+      }
+      input, textarea, button {
+        font: inherit;
+      }
+      input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #234c3a;
+        background: #0e2419;
+        color: #f0e6c8;
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+      button {
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-weight: 700;
+        background: #d6a23a;
+        color: #10271d;
+        margin-right: 8px;
+        margin-bottom: 8px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border-bottom: 1px solid #234c3a;
+        padding: 6px;
+        text-align: left;
+        font-size: 13px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .status {
+        font-size: 12px;
+        color: #c9b988;
+      }
+      #qr-overlay {
+        position: fixed;
+        inset: 0;
+        display: none;
+        background: rgba(0, 0, 0, 0.92);
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      #qr-overlay img {
+        width: min(80vw, 80vh);
+        height: min(80vw, 80vh);
+        background: #fff;
+        padding: 10px;
+      }
+      #qr-overlay .label {
+        position: absolute;
+        bottom: 36px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 20px;
+      }
+      @media (max-width: 900px) {
+        .row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>9·9·9 ADMIN CONSOLE</h1>
+      <div class="status" id="status">Ready.</div>
+
+      <section>
+        <h2>Participants</h2>
+        <button id="refresh-btn">Refresh</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>UID</th>
+              <th>🌭</th>
+              <th>🍺</th>
+              <th>TOT</th>
+            </tr>
+          </thead>
+          <tbody id="participants-body"></tbody>
+        </table>
+      </section>
+
+      <section class="row">
+        <div>
+          <h2>Force Register / Rename</h2>
+          <label>UID</label>
+          <input id="uid-input" placeholder="04AABBCCDD1122" />
+          <label>Name</label>
+          <input id="name-input" placeholder="Player name" />
+          <button id="save-participant-btn">Save Participant</button>
+        </div>
+        <div>
+          <h2>Remove Participant</h2>
+          <label>UID to remove</label>
+          <input id="delete-uid-input" placeholder="UID" />
+          <button id="delete-participant-btn">Delete UID</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Manual Game Override (JSON)</h2>
+        <textarea id="game-json" rows="12"></textarea>
+        <button id="set-game-btn">Apply Override</button>
+        <button id="clear-game-btn">Clear Override</button>
+      </section>
+
+      <section class="row">
+        <div>
+          <h2>Archive Event</h2>
+          <label>Event date (YYYY-MM-DD)</label>
+          <input id="archive-date" placeholder="2026-05-31" />
+          <button id="archive-btn">Archive + Reset</button>
+        </div>
+        <div>
+          <h2>Reset Scores</h2>
+          <label>Type <code>RESET 999</code></label>
+          <input id="reset-phrase" placeholder="RESET 999" />
+          <label><input id="reset-confirm" type="checkbox" /> I understand this clears all participants + taps.</label>
+          <button id="reset-btn">Reset Now</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>QR Fullscreen</h2>
+        <button id="show-qr-btn">Show QR</button>
+        <span class="status">URL: https://999.austinzani.dev</span>
+      </section>
+    </main>
+
+    <div id="qr-overlay">
+      <img
+        alt="999 URL QR"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=1024x1024&data=https%3A%2F%2F999.austinzani.dev"
+      />
+      <div class="label">https://999.austinzani.dev</div>
+    </div>
+
+    <script>
+      const statusEl = document.getElementById('status');
+      const participantsBody = document.getElementById('participants-body');
+      const gameJsonEl = document.getElementById('game-json');
+
+      const setStatus = (message) => {
+        statusEl.textContent = message;
+      };
+
+      async function fetchJSON(url, options) {
+        const response = await fetch(url, {
+          headers: { 'Content-Type': 'application/json' },
+          ...options,
+        });
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(`${response.status} ${text}`);
+        }
+        return response.json();
+      }
+
+      async function refreshParticipants() {
+        const payload = await fetchJSON('/api/admin/participants');
+        participantsBody.innerHTML = '';
+        for (const participant of payload.participants) {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${participant.name}</td>
+            <td>${participant.uid ?? ''}</td>
+            <td>${participant.hotdogs}</td>
+            <td>${participant.beers}</td>
+            <td>${participant.hotdogs + participant.beers}</td>
+          `;
+          participantsBody.appendChild(row);
+        }
+      }
+
+      async function loadInitialGameJSON() {
+        const state = await fetchJSON('/api/state');
+        gameJsonEl.value = JSON.stringify(state.game, null, 2);
+      }
+
+      document.getElementById('refresh-btn').addEventListener('click', async () => {
+        try {
+          await refreshParticipants();
+          setStatus('Participants refreshed.');
+        } catch (error) {
+          setStatus(`Refresh failed: ${error.message}`);
+        }
+      });
+
+      document.getElementById('save-participant-btn').addEventListener('click', async () => {
+        const uid = document.getElementById('uid-input').value.trim();
+        const name = document.getElementById('name-input').value.trim();
+        if (!uid || !name) {
+          setStatus('UID and name are required.');
+          return;
+        }
+        try {
+          await fetchJSON('/api/admin/force-register', {
+            method: 'POST',
+            body: JSON.stringify({ uid, name }),
+          });
+          await refreshParticipants();
+          setStatus(`Saved ${name} (${uid}).`);
+        } catch (error) {
+          setStatus(`Save failed: ${error.message}`);
+        }
+      });
+
+      document.getElementById('delete-participant-btn').addEventListener('click', async () => {
+        const uid = document.getElementById('delete-uid-input').value.trim();
+        if (!uid) {
+          setStatus('UID is required.');
+          return;
+        }
+        try {
+          await fetchJSON(`/api/admin/participants/${encodeURIComponent(uid)}`, { method: 'DELETE' });
+          await refreshParticipants();
+          setStatus(`Deleted UID ${uid}.`);
+        } catch (error) {
+          setStatus(`Delete failed: ${error.message}`);
+        }
+      });
+
+      document.getElementById('set-game-btn').addEventListener('click', async () => {
+        try {
+          const parsed = JSON.parse(gameJsonEl.value);
+          await fetchJSON('/api/admin/game', {
+            method: 'POST',
+            body: JSON.stringify(parsed),
+          });
+          setStatus('Manual game override applied.');
+        } catch (error) {
+          setStatus(`Override failed: ${error.message}`);
+        }
+      });
+
+      document.getElementById('clear-game-btn').addEventListener('click', async () => {
+        try {
+          await fetchJSON('/api/admin/game', { method: 'DELETE' });
+          const state = await fetchJSON('/api/state');
+          gameJsonEl.value = JSON.stringify(state.game, null, 2);
+          setStatus('Manual override cleared.');
+        } catch (error) {
+          setStatus(`Clear override failed: ${error.message}`);
+        }
+      });
+
+      document.getElementById('archive-btn').addEventListener('click', async () => {
+        const eventDate = document.getElementById('archive-date').value.trim() || undefined;
+        try {
+          const result = await fetchJSON('/api/admin/archive', {
+            method: 'POST',
+            body: JSON.stringify({ event_date: eventDate }),
+          });
+          await refreshParticipants();
+          setStatus(`Archived to ${result.archivePath}`);
+        } catch (error) {
+          setStatus(`Archive failed: ${error.message}`);
+        }
+      });
+
+      document.getElementById('reset-btn').addEventListener('click', async () => {
+        const confirmPhrase = document.getElementById('reset-phrase').value;
+        const confirmSecondCheck = document.getElementById('reset-confirm').checked;
+        try {
+          await fetchJSON('/api/admin/reset', {
+            method: 'POST',
+            body: JSON.stringify({ confirm_phrase: confirmPhrase, confirm_second_check: confirmSecondCheck }),
+          });
+          await refreshParticipants();
+          setStatus('Scores reset.');
+        } catch (error) {
+          setStatus(`Reset failed: ${error.message}`);
+        }
+      });
+
+      const qrOverlay = document.getElementById('qr-overlay');
+      document.getElementById('show-qr-btn').addEventListener('click', () => {
+        qrOverlay.style.display = 'flex';
+      });
+      qrOverlay.addEventListener('click', () => {
+        qrOverlay.style.display = 'none';
+      });
+
+      (async () => {
+        try {
+          await Promise.all([refreshParticipants(), loadInitialGameJSON()]);
+          setStatus('Ready.');
+        } catch (error) {
+          setStatus(`Init failed: ${error.message}`);
+        }
+      })();
+    </script>
+  </body>
+</html>

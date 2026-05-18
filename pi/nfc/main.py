@@ -44,6 +44,11 @@ def parse_args() -> argparse.Namespace:
         default="tty:/dev/nfc-beer:pn532",
         help="nfcpy connection string for the beer reader.",
     )
+    parser.add_argument(
+        "--heartbeat-url",
+        default="http://127.0.0.1:8000/api/nfc/heartbeat",
+        help="API endpoint used for station health heartbeats.",
+    )
     return parser.parse_args()
 
 
@@ -92,9 +97,20 @@ def main() -> int:
         thread.start()
 
     last_seen: dict[tuple[str, str], float] = {}
+    last_heartbeat_at = 0.0
 
     with httpx.Client(timeout=5.0) as client:
         while not stop_event.is_set():
+            now = time.monotonic()
+            if now - last_heartbeat_at >= 20:
+                for station in ("hotdog", "beer"):
+                    try:
+                        heartbeat = client.post(args.heartbeat_url, json={"station": station})
+                        heartbeat.raise_for_status()
+                    except httpx.HTTPError:
+                        LOGGER.warning("Heartbeat failed station=%s", station)
+                last_heartbeat_at = now
+
             try:
                 station, uid = event_queue.get(timeout=0.5)
             except Exception:
@@ -110,6 +126,8 @@ def main() -> int:
 
             payload = {"uid": uid, "station": station}
             try:
+                heartbeat = client.post(args.heartbeat_url, json={"station": station})
+                heartbeat.raise_for_status()
                 response = client.post(args.api_url, json=payload)
                 response.raise_for_status()
                 LOGGER.info("Tap accepted station=%s uid=%s", station, uid)

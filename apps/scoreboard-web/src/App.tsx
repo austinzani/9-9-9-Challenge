@@ -12,8 +12,10 @@ export function App() {
     game,
     participants,
     connectionState,
+    readerHealth,
     registration,
     hotName,
+    celebrationName,
     registerParticipant,
   } = useScoreboardSocket({
     initialGame: INITIAL_GAME,
@@ -47,13 +49,26 @@ export function App() {
               showTopHighlight
               qrUrl="999.austinzani.dev"
               showQrUrl={!isKioskMode}
+              showQrCode={isKioskMode}
               connectionState={connectionState}
+              readerHealth={readerHealth}
               topInset={topInset}
               hotName={hotName}
             />
           </div>
         </div>
       </div>
+
+      {celebrationName && (
+        <div className="celebration-overlay" aria-live="polite">
+          <div className="celebration-banner">{celebrationName} HIT 9·9·9!</div>
+          <div className="celebration-confetti">
+            {Array.from({ length: 20 }).map((_, index) => (
+              <span key={index} />
+            ))}
+          </div>
+        </div>
+      )}
 
       {registration && (
         <RegistrationModal

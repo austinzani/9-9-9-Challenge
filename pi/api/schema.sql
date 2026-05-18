@@ -27,4 +27,10 @@ CREATE TABLE IF NOT EXISTS event_meta (
   value TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS celebrations (
+  uid TEXT PRIMARY KEY,
+  celebrated_at TEXT NOT NULL DEFAULT (datetime('now')),
+  FOREIGN KEY(uid) REFERENCES participants(uid) ON DELETE CASCADE
+);
+
 CREATE INDEX IF NOT EXISTS idx_taps_uid_time ON taps(uid, tapped_at DESC);

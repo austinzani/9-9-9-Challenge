@@ -5,6 +5,8 @@ node_modules/
 dist/
 coverage/
 .storybook-out/
+playwright-report/
+test-results/
 
 # Python
 __pycache__/

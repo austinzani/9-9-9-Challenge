@@ -16,6 +16,9 @@ interface LinescoreCardProps {
 
 function HealthPill({ label, online, color }: { label: string; online?: boolean; color: string }) {
   const isOffline = online === false;
+  if (!isOffline) {
+    return null;
+  }
 
   return (
     <span

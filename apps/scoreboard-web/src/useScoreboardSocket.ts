@@ -1,10 +1,16 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef } from 'react';
 
-import { type ConnectionState, type GameState, type Participant } from '@challenge/scoreboard-ui';
+import {
+  type ConnectionState,
+  type GameState,
+  type Participant,
+  type ReaderHealth,
+} from '@challenge/scoreboard-ui';
 
 interface StatePayload {
   game: GameState;
   participants: Participant[];
+  readerHealth?: ReaderHealth;
 }
 
 export interface RegistrationNeededPayload {
@@ -18,8 +24,10 @@ interface SocketState {
   game: GameState;
   participants: Participant[];
   connectionState: ConnectionState;
+  readerHealth: ReaderHealth;
   registration: RegistrationNeededPayload | null;
   hotUid: string | null;
+  celebrationName: string | null;
 }
 
 type Action =
@@ -28,6 +36,8 @@ type Action =
   | { type: 'socket_closed' }
   | { type: 'tap'; uid: string }
   | { type: 'tap_clear' }
+  | { type: 'celebration'; name: string }
+  | { type: 'celebration_clear' }
   | { type: 'registration_needed'; payload: RegistrationNeededPayload }
   | { type: 'registration_resolved'; uid: string };
 
@@ -42,6 +52,7 @@ function reducer(state: SocketState, action: Action): SocketState {
         ...state,
         game: action.payload.game,
         participants: action.payload.participants,
+        readerHealth: action.payload.readerHealth ?? state.readerHealth,
       };
     case 'socket_open':
       return {
@@ -62,6 +73,16 @@ function reducer(state: SocketState, action: Action): SocketState {
       return {
         ...state,
         hotUid: null,
+      };
+    case 'celebration':
+      return {
+        ...state,
+        celebrationName: action.name,
+      };
+    case 'celebration_clear':
+      return {
+        ...state,
+        celebrationName: null,
       };
     case 'registration_needed':
       return {
@@ -109,8 +130,13 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     game: options.initialGame,
     participants: options.initialParticipants,
     connectionState: 'disconnected' as ConnectionState,
+    readerHealth: {
+      hotdogOnline: false,
+      beerOnline: false,
+    },
     registration: null,
     hotUid: null,
+    celebrationName: null,
   });
 
   const socketRef = useRef<WebSocket | null>(null);
@@ -161,6 +187,15 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
           const tap = payload.tap as { uid: string };
           dispatch({ type: 'tap', uid: tap.uid });
           window.setTimeout(() => dispatch({ type: 'tap_clear' }), 1200);
+          return;
+        }
+
+        if (payload.type === 'celebration' && 'participant' in payload) {
+          const participant = payload.participant as { name?: string };
+          if (participant.name) {
+            dispatch({ type: 'celebration', name: participant.name });
+            window.setTimeout(() => dispatch({ type: 'celebration_clear' }), 2000);
+          }
           return;
         }
 
@@ -243,7 +278,9 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     participants: state.participants,
     connectionState: state.connectionState,
     registration: state.registration,
+    readerHealth: state.readerHealth,
     hotName,
+    celebrationName: state.celebrationName,
     registerParticipant,
   };
 }

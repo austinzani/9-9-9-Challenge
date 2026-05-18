@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import shutil
 import sqlite3
 import threading
+import os
 from pathlib import Path
 from typing import Literal
 
@@ -16,7 +18,8 @@ Station = Literal["hotdog", "beer"]
 
 def resolve_db_path(path: str | None = None) -> Path:
     """Resolve the SQLite file path and ensure its parent directory exists."""
-    db_path = Path(path) if path else _DB_DEFAULT
+    candidate = path or os.getenv("CHALLENGE_DB_PATH")
+    db_path = Path(candidate) if candidate else _DB_DEFAULT
     db_path.parent.mkdir(parents=True, exist_ok=True)
     return db_path
 
@@ -28,6 +31,15 @@ def connect(db_path: str | None = None) -> sqlite3.Connection:
     conn.execute("PRAGMA journal_mode=WAL;")
     conn.execute("PRAGMA foreign_keys=ON;")
     return conn
+
+
+def db_file_path(conn: sqlite3.Connection) -> Path:
+    """Return the absolute path for the primary SQLite database file."""
+    row = conn.execute("PRAGMA database_list").fetchone()
+    if row is None:
+        raise RuntimeError("Unable to resolve database file path")
+    # PRAGMA database_list columns: seq, name, file
+    return Path(row[2]).resolve()
 
 
 def initialize_schema(conn: sqlite3.Connection) -> None:
@@ -56,6 +68,43 @@ def upsert_participant(conn: sqlite3.Connection, uid: str, name: str) -> None:
             (uid, name),
         )
         conn.commit()
+
+
+def delete_participant(conn: sqlite3.Connection, uid: str) -> None:
+    """Delete a participant and all cascade-linked tap history."""
+    with _DB_LOCK:
+        conn.execute("DELETE FROM participants WHERE uid = ?", (uid,))
+        conn.execute("DELETE FROM pending_registrations WHERE uid = ?", (uid,))
+        conn.execute("DELETE FROM celebrations WHERE uid = ?", (uid,))
+        conn.commit()
+
+
+def reset_event_scores(conn: sqlite3.Connection) -> None:
+    """Clear participants and taps for a new event, preserving schema."""
+    with _DB_LOCK:
+        conn.execute("DELETE FROM taps")
+        conn.execute("DELETE FROM participants")
+        conn.execute("DELETE FROM pending_registrations")
+        conn.execute("DELETE FROM celebrations")
+        conn.commit()
+
+
+def archive_and_reset_event(conn: sqlite3.Connection, event_date: str) -> Path:
+    """Snapshot the DB to archive/ then truncate event tables."""
+    source = db_file_path(conn)
+    archive_dir = source.parent.parent / "archive"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+
+    # Compact WAL into the main file before copying to avoid partial snapshots.
+    with _DB_LOCK:
+        conn.execute("PRAGMA wal_checkpoint(FULL)")
+        conn.commit()
+
+    archive_path = archive_dir / f"999-{event_date}.sqlite"
+    shutil.copy2(source, archive_path)
+
+    reset_event_scores(conn)
+    return archive_path
 
 
 def record_tap(conn: sqlite3.Connection, uid: str, station: Station, source: str = "nfc") -> dict:
@@ -178,6 +227,80 @@ def register_and_consume_pending(conn: sqlite3.Connection, uid: str, name: str) 
         "name": winner_name,
         "creditedHotdogs": credited_hotdog,
         "creditedBeers": credited_beer,
+    }
+
+
+def participant_totals(conn: sqlite3.Connection, uid: str) -> dict | None:
+    """Return hotdog/beer totals for one participant UID."""
+    with _DB_LOCK:
+        row = conn.execute(
+            """
+            SELECT
+              p.uid,
+              p.name,
+              COALESCE(SUM(CASE WHEN t.station = 'hotdog' THEN 1 ELSE 0 END), 0) AS hotdogs,
+              COALESCE(SUM(CASE WHEN t.station = 'beer' THEN 1 ELSE 0 END), 0) AS beers
+            FROM participants p
+            LEFT JOIN taps t ON t.uid = p.uid
+            WHERE p.uid = ?
+            GROUP BY p.uid, p.name
+            """,
+            (uid,),
+        ).fetchone()
+
+    if row is None:
+        return None
+
+    return {
+        "uid": row["uid"],
+        "name": row["name"],
+        "hotdogs": int(row["hotdogs"]),
+        "beers": int(row["beers"]),
+    }
+
+
+def mark_celebration_if_earned(conn: sqlite3.Connection, uid: str) -> dict | None:
+    """Mark and return a new celebration when a participant reaches 9/9."""
+    with _DB_LOCK:
+        totals = conn.execute(
+            """
+            SELECT
+              p.uid,
+              p.name,
+              COALESCE(SUM(CASE WHEN t.station = 'hotdog' THEN 1 ELSE 0 END), 0) AS hotdogs,
+              COALESCE(SUM(CASE WHEN t.station = 'beer' THEN 1 ELSE 0 END), 0) AS beers
+            FROM participants p
+            LEFT JOIN taps t ON t.uid = p.uid
+            WHERE p.uid = ?
+            GROUP BY p.uid, p.name
+            """,
+            (uid,),
+        ).fetchone()
+
+        if totals is None:
+            return None
+
+        if int(totals["hotdogs"]) < 9 or int(totals["beers"]) < 9:
+            return None
+
+        existing = conn.execute(
+            "SELECT 1 FROM celebrations WHERE uid = ?",
+            (uid,),
+        ).fetchone()
+        if existing is not None:
+            return None
+
+        conn.execute(
+            "INSERT INTO celebrations(uid, celebrated_at) VALUES(?, datetime('now'))",
+            (uid,),
+        )
+        conn.commit()
+
+    return {
+        "uid": totals["uid"],
+        "name": totals["name"],
+        "hotdogs": int(totals["hotdogs"]),
+        "beers": int(totals["beers"]),
     }
 
 

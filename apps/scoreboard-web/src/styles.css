@@ -57,3 +57,88 @@ body.kiosk #phone-preview {
   height: 100vh;
   box-shadow: none;
 }
+
+.celebration-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8vh;
+  background: rgba(255, 221, 120, 0.2);
+  animation: celebrationFade 2s ease forwards;
+  z-index: 1000;
+}
+
+.celebration-banner {
+  background: #d6a23a;
+  color: #10271d;
+  font-family: 'Big Shoulders Display', 'Oswald', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 14px 22px;
+  font-size: clamp(24px, 4vw, 54px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.celebration-confetti {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.celebration-confetti span {
+  position: absolute;
+  top: -12px;
+  width: 10px;
+  height: 18px;
+  background: #d6a23a;
+  opacity: 0.95;
+  animation: confettiDrop 1.9s linear forwards;
+}
+
+.celebration-confetti span:nth-child(odd) {
+  background: #c8102e;
+}
+
+.celebration-confetti span:nth-child(3n) {
+  background: #f0e6c8;
+}
+
+.celebration-confetti span:nth-child(1) { left: 3%; animation-delay: 0.03s; }
+.celebration-confetti span:nth-child(2) { left: 8%; animation-delay: 0.05s; }
+.celebration-confetti span:nth-child(3) { left: 13%; animation-delay: 0.08s; }
+.celebration-confetti span:nth-child(4) { left: 19%; animation-delay: 0.1s; }
+.celebration-confetti span:nth-child(5) { left: 24%; animation-delay: 0.12s; }
+.celebration-confetti span:nth-child(6) { left: 31%; animation-delay: 0.07s; }
+.celebration-confetti span:nth-child(7) { left: 36%; animation-delay: 0.15s; }
+.celebration-confetti span:nth-child(8) { left: 42%; animation-delay: 0.09s; }
+.celebration-confetti span:nth-child(9) { left: 47%; animation-delay: 0.04s; }
+.celebration-confetti span:nth-child(10) { left: 52%; animation-delay: 0.13s; }
+.celebration-confetti span:nth-child(11) { left: 57%; animation-delay: 0.02s; }
+.celebration-confetti span:nth-child(12) { left: 63%; animation-delay: 0.11s; }
+.celebration-confetti span:nth-child(13) { left: 68%; animation-delay: 0.06s; }
+.celebration-confetti span:nth-child(14) { left: 73%; animation-delay: 0.14s; }
+.celebration-confetti span:nth-child(15) { left: 78%; animation-delay: 0.09s; }
+.celebration-confetti span:nth-child(16) { left: 83%; animation-delay: 0.03s; }
+.celebration-confetti span:nth-child(17) { left: 88%; animation-delay: 0.1s; }
+.celebration-confetti span:nth-child(18) { left: 92%; animation-delay: 0.08s; }
+.celebration-confetti span:nth-child(19) { left: 96%; animation-delay: 0.12s; }
+.celebration-confetti span:nth-child(20) { left: 99%; animation-delay: 0.05s; }
+
+@keyframes celebrationFade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes confettiDrop {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
