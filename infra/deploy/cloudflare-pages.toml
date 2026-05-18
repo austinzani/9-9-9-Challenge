@@ -1,0 +1,6 @@
+# Cloudflare Pages deployment settings for the remote scoreboard frontend.
+project = "999-scoreboard"
+
+[build]
+command = "pnpm install --frozen-lockfile && pnpm --filter @challenge/scoreboard-web build"
+output_dir = "apps/scoreboard-web/dist"

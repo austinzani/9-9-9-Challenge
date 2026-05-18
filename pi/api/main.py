@@ -8,6 +8,7 @@ from contextlib import asynccontextmanager, suppress
 from typing import Any, Literal
 
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
@@ -92,6 +93,19 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="9-9-9 Challenge API", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://999.austinzani.dev",
+        "http://localhost",
+        "http://localhost:8000",
+        "http://127.0.0.1",
+        "http://127.0.0.1:8000",
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "DELETE", "OPTIONS"],
+    allow_headers=["*"],
+)
 app.include_router(admin_router)
 
 
