@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState, type CSSProperties } from 'react';
 
 import { Scoreboard } from '@challenge/scoreboard-ui';
 
@@ -26,36 +26,45 @@ export function App() {
     const mode = new URLSearchParams(window.location.search).get('mode');
     return mode === 'kiosk';
   }, []);
+  const [scoreboardScale, setScoreboardScale] = useState(() =>
+    calculateScoreboardScale(window.innerWidth, window.innerHeight, isKioskMode)
+  );
+
+  const topInset = 12;
+  const shellStyle = useMemo(
+    () =>
+      ({
+        '--scoreboard-scale': scoreboardScale,
+      }) as CSSProperties,
+    [scoreboardScale]
+  );
 
   useEffect(() => {
-    document.body.classList.toggle('kiosk', isKioskMode);
-    return () => {
-      document.body.classList.remove('kiosk');
+    const updateScale = () => {
+      setScoreboardScale(calculateScoreboardScale(window.innerWidth, window.innerHeight, isKioskMode));
     };
-  }, [isKioskMode]);
 
-  const topInset = useMemo(() => {
-    return isKioskMode ? 12 : 54;
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
   }, [isKioskMode]);
 
   return (
     <>
-      <div id="stage">
-        <div id="phone-preview">
-          <div className="phone-scroll">
-            <Scoreboard
-              participants={participants}
-              game={game}
-              showTopHighlight
-              qrUrl="999.austinzani.dev"
-              showQrUrl={!isKioskMode}
-              showQrCode={isKioskMode}
-              connectionState={connectionState}
-              readerHealth={readerHealth}
-              topInset={topInset}
-              hotName={hotName}
-            />
-          </div>
+      <div id="scoreboard-shell" className={isKioskMode ? 'kiosk' : undefined} style={shellStyle}>
+        <div className="scoreboard-scroll">
+          <Scoreboard
+            participants={participants}
+            game={game}
+            showTopHighlight
+            qrUrl="999.austinzani.dev"
+            showQrUrl={!isKioskMode}
+            showQrCode={isKioskMode}
+            connectionState={connectionState}
+            readerHealth={readerHealth}
+            topInset={topInset}
+            hotName={hotName}
+          />
         </div>
       </div>
 
@@ -81,4 +90,21 @@ export function App() {
       )}
     </>
   );
+}
+
+function calculateScoreboardScale(width: number, height: number, isKioskMode: boolean) {
+  const growth = Math.min(width / 1920, height / 1080);
+  const extraGrowth = Math.max(0, growth - 1);
+
+  if (isKioskMode) {
+    // Keep 1080p baseline stable, then scale up aggressively on large displays.
+    const boostedGrowth = extraGrowth * 0.85 + extraGrowth * extraGrowth * 0.55;
+    return clamp(1.35 + boostedGrowth, 1.35, 2.35);
+  }
+
+  return clamp(1 + extraGrowth * 0.3, 1, 1.48);
+}
+
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
 }

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, type CSSProperties } from 'react';
 
 import { ColumnHeader } from './ColumnHeader';
 import { Footer } from './Footer';
@@ -40,6 +40,20 @@ export function Scoreboard({
   topInset = 54,
 }: ScoreboardProps) {
   const palette = PALETTES.green;
+  const leaderboardGridTemplate =
+    'clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1)))';
+  const linescoreGridTemplate =
+    'minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr))';
+  const layoutVars: CSSProperties = {
+    '--scoreboard-grid-template': leaderboardGridTemplate,
+    '--scoreboard-linescore-template': linescoreGridTemplate,
+    '--scoreboard-grid-pad-x':
+      'clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1)))',
+    '--scoreboard-row-pad-y':
+      'clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1)))',
+    '--scoreboard-header-pad-y':
+      'clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1)))',
+  } as CSSProperties;
 
   const sorted = useMemo(() => {
     return [...participants].sort((a, b) => {
@@ -60,6 +74,7 @@ export function Scoreboard({
   return (
     <div
       style={{
+        ...layoutVars,
         background: palette.bg,
         color: palette.ink,
         minHeight: '100%',

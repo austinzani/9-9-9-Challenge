@@ -9,53 +9,31 @@ body,
 }
 
 body {
-  background: #d9d2c4;
-  background-image: radial-gradient(ellipse at top, #e6dfd0 0%, #c9c0ad 70%, #b5ac98 100%);
+  background: #10271d;
   font-family: 'Oswald', system-ui, sans-serif;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-#stage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-#phone-preview {
-  width: 402px;
-  height: 874px;
+  min-height: 100dvh;
   overflow: hidden;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.12);
 }
 
-.phone-scroll {
+#scoreboard-shell {
+  width: 100vw;
+  height: 100dvh;
+  --scoreboard-scale: 1;
+}
+
+#scoreboard-shell.kiosk {
+  --scoreboard-scale: 1.35;
+}
+
+.scoreboard-scroll {
   width: 100%;
   height: 100%;
   overflow-y: auto;
 }
 
-.phone-scroll::-webkit-scrollbar {
+.scoreboard-scroll::-webkit-scrollbar {
   width: 0;
   background: transparent;
-}
-
-body.kiosk {
-  background: #000;
-}
-
-body.kiosk #stage {
-  min-height: 100vh;
-  padding: 0;
-}
-
-body.kiosk #phone-preview {
-  width: 100vw;
-  height: 100vh;
-  box-shadow: none;
 }
 
 .celebration-overlay {
