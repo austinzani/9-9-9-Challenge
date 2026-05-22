@@ -28,6 +28,20 @@ interface SocketState {
   registration: RegistrationNeededPayload | null;
   hotUid: string | null;
   celebrationName: string | null;
+  tapEvent: TapEventPayload | null;
+}
+
+interface TapEventPayload {
+  uid: string;
+  station: 'hotdog' | 'beer';
+  eventId: number;
+}
+
+export interface TapFeedback {
+  eventId: number;
+  playerName: string;
+  station: 'hotdog' | 'beer';
+  delta: number;
 }
 
 type Action =
@@ -35,6 +49,7 @@ type Action =
   | { type: 'socket_open' }
   | { type: 'socket_closed' }
   | { type: 'tap'; uid: string }
+  | { type: 'tap_event'; payload: TapEventPayload }
   | { type: 'tap_clear' }
   | { type: 'celebration'; name: string }
   | { type: 'celebration_clear' }
@@ -68,6 +83,11 @@ function reducer(state: SocketState, action: Action): SocketState {
       return {
         ...state,
         hotUid: action.uid,
+      };
+    case 'tap_event':
+      return {
+        ...state,
+        tapEvent: action.payload,
       };
     case 'tap_clear':
       return {
@@ -137,12 +157,14 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     registration: null,
     hotUid: null,
     celebrationName: null,
+    tapEvent: null,
   });
 
   const socketRef = useRef<WebSocket | null>(null);
   const reconnectAttemptRef = useRef(0);
   const reconnectTimerRef = useRef<number | null>(null);
   const isDisposedRef = useRef(false);
+  const tapEventIdRef = useRef(0);
 
   const connectSocket = useCallback(() => {
     if (isDisposedRef.current) {
@@ -184,7 +206,19 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
         }
 
         if (payload.type === 'tap' && 'tap' in payload) {
-          const tap = payload.tap as { uid: string };
+          const tap = payload.tap as { uid: string; station?: 'hotdog' | 'beer' };
+          const station = tap.station === 'beer' ? 'beer' : 'hotdog';
+
+          tapEventIdRef.current += 1;
+          dispatch({
+            type: 'tap_event',
+            payload: {
+              uid: tap.uid,
+              station,
+              eventId: tapEventIdRef.current,
+            },
+          });
+
           dispatch({ type: 'tap', uid: tap.uid });
           window.setTimeout(() => dispatch({ type: 'tap_clear' }), 1200);
           return;
@@ -273,6 +307,21 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     return state.participants.find((participant) => participant.uid === state.hotUid)?.name ?? null;
   }, [state.hotUid, state.participants]);
 
+  const tapFeedback = useMemo<TapFeedback | null>(() => {
+    if (!state.tapEvent) {
+      return null;
+    }
+
+    const participant = state.participants.find((candidate) => candidate.uid === state.tapEvent?.uid);
+
+    return {
+      eventId: state.tapEvent.eventId,
+      playerName: participant?.name ?? 'Unknown',
+      station: state.tapEvent.station,
+      delta: 1,
+    };
+  }, [state.tapEvent, state.participants]);
+
   return {
     game: state.game,
     participants: state.participants,
@@ -280,6 +329,7 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     registration: state.registration,
     readerHealth: state.readerHealth,
     hotName,
+    tapFeedback,
     celebrationName: state.celebrationName,
     registerParticipant,
   };
