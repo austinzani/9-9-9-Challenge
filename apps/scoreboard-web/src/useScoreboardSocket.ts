@@ -44,6 +44,15 @@ export interface TapFeedback {
   delta: number;
 }
 
+export interface RegisterParticipantResult {
+  ok: boolean;
+  status: 'registered' | 'already_registered';
+  uid: string;
+  name: string;
+  creditedHotdogs: number;
+  creditedBeers: number;
+}
+
 type Action =
   | { type: 'hydrate'; payload: StatePayload }
   | { type: 'socket_open' }
@@ -282,9 +291,9 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     };
   }, [connectSocket]);
 
-  const registerParticipant = useCallback(async (name: string) => {
+  const registerParticipant = useCallback(async (name: string): Promise<RegisterParticipantResult> => {
     if (!state.registration) {
-      return;
+      throw new Error('No registration is currently pending.');
     }
 
     const response = await fetch(API_REGISTER_URL, {
@@ -298,6 +307,8 @@ export function useScoreboardSocket(options: UseScoreboardSocketOptions) {
     if (!response.ok) {
       throw new Error(`Registration failed with ${response.status}`);
     }
+
+    return (await response.json()) as RegisterParticipantResult;
   }, [state.registration]);
 
   const hotName = useMemo(() => {

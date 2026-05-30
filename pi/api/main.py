@@ -6,6 +6,7 @@ import asyncio
 import os
 import time
 from contextlib import asynccontextmanager, suppress
+from datetime import date
 from pathlib import Path
 from typing import Any, Literal
 
@@ -84,7 +85,7 @@ async def lifespan(app: FastAPI):
     initialize_schema(conn)
 
     team_id = int(os.getenv("MLB_TEAM_ID", "113"))
-    game_date = os.getenv("MLB_GAME_DATE", "2026-05-31")
+    game_date = os.getenv("MLB_GAME_DATE") or date.today().isoformat()
     disable_mlb_poller = os.getenv("DISABLE_MLB_POLLER", "0") == "1"
 
     poller = None if disable_mlb_poller else MlbPoller(team_id=team_id, game_date=game_date)

@@ -36,12 +36,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--hotdog-device",
-        default="tty:/dev/nfc-hotdog:pn532",
+        default="tty:nfc-hotdog:pn532",
         help="nfcpy connection string for the hotdog reader.",
     )
     parser.add_argument(
         "--beer-device",
-        default="tty:/dev/nfc-beer:pn532",
+        default="tty:nfc-beer:pn532",
         help="nfcpy connection string for the beer reader.",
     )
     parser.add_argument(

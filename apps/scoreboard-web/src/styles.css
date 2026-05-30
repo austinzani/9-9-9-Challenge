@@ -13,6 +13,7 @@ body {
   font-family: 'Oswald', system-ui, sans-serif;
   min-height: 100dvh;
   overflow: hidden;
+  --emoji-font-stack: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 #scoreboard-shell {
@@ -22,7 +23,7 @@ body {
 }
 
 #scoreboard-shell.kiosk {
-  --scoreboard-scale: 1.35;
+  --scoreboard-scale: 2.7;
 }
 
 .scoreboard-scroll {
@@ -60,6 +61,7 @@ body {
   font-size: clamp(20px, 2.5vw, 44px);
   line-height: 1;
   opacity: 0;
+  font-family: var(--emoji-font-stack);
   will-change: transform, opacity;
 }
 

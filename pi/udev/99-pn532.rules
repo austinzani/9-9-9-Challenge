@@ -1,15 +1,19 @@
 # Pin identical PN532 readers to stable role names by physical USB port path.
 #
-# Populate the devpath values once on the Pi with:
-#   udevadm info -a -n /dev/ttyUSB0 | rg devpath
-#   udevadm info -a -n /dev/ttyUSB1 | rg devpath
+# On this Pi the readers currently enumerate through a CH340 USB-serial bridge:
+#   idVendor=1a86
+#   idProduct=7523
 #
-# Update <PORT-A-DEVPATH> and <PORT-B-DEVPATH> below with those values.
-# The daemon opens /dev/nfc-hotdog and /dev/nfc-beer so station identity stays
-# stable across reboots even when ttyUSB ordering changes.
-SUBSYSTEM=="tty", ATTRS{idVendor}=="072f", KERNEL=="ttyUSB*", ATTRS{devpath}=="<PORT-A-DEVPATH>", SYMLINK+="nfc-hotdog"
-SUBSYSTEM=="tty", ATTRS{idVendor}=="072f", KERNEL=="ttyUSB*", ATTRS{devpath}=="<PORT-B-DEVPATH>", SYMLINK+="nfc-beer"
+# Capture the devpath for each physical port with:
+#   udevadm info -a -n /dev/ttyUSB0 | grep devpath
+#   udevadm info -a -n /dev/ttyUSB1 | grep devpath
+#
+# Current observed USB-port devpaths are 1.1 and 1.2, but you still need to
+# confirm which physical reader is HOTDOG vs BEER before replacing the
+# placeholders below.
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", KERNEL=="ttyUSB*", ATTRS{devpath}=="1.1", SYMLINK+="nfc-hotdog"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", KERNEL=="ttyUSB*", ATTRS{devpath}=="1.2", SYMLINK+="nfc-beer"
 
 # Some PN532 firmware enumerates as ttyACM*. Keep parallel rules for that case.
-SUBSYSTEM=="tty", ATTRS{idVendor}=="072f", KERNEL=="ttyACM*", ATTRS{devpath}=="<PORT-A-DEVPATH>", SYMLINK+="nfc-hotdog"
-SUBSYSTEM=="tty", ATTRS{idVendor}=="072f", KERNEL=="ttyACM*", ATTRS{devpath}=="<PORT-B-DEVPATH>", SYMLINK+="nfc-beer"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", KERNEL=="ttyACM*", ATTRS{devpath}=="1.1", SYMLINK+="nfc-hotdog"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", KERNEL=="ttyACM*", ATTRS{devpath}=="1.2", SYMLINK+="nfc-beer"

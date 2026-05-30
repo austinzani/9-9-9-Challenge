@@ -45,8 +45,7 @@ export function ParticipantRow({
       <div
         style={{
           fontFamily: '"DM Mono", monospace',
-          fontSize:
-            'clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1)))',
+          fontSize: 'var(--scoreboard-rank-size)',
           color: isLeader ? palette.gold : palette.inkDim,
           fontWeight: 700,
           fontVariantNumeric: 'tabular-nums',
@@ -59,15 +58,14 @@ export function ParticipantRow({
         style={{
           fontFamily: '"Big Shoulders Stencil Display", "Oswald", sans-serif',
           fontWeight: 600,
-          fontSize:
-            'clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1)))',
+          fontSize: 'var(--scoreboard-name-size)',
           lineHeight: 1,
           color: palette.ink,
           letterSpacing: '0.01em',
           textTransform: 'uppercase',
           display: 'flex',
           alignItems: 'center',
-          gap: 'clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)))',
+          gap: 'var(--scoreboard-name-gap)',
         }}
       >
         <span style={{ textShadow: isLeader ? `0 0 14px ${palette.gold}44` : 'none' }}>
@@ -77,13 +75,11 @@ export function ParticipantRow({
           <span
             style={{
               fontFamily: '"DM Mono", monospace',
-              fontSize:
-                'clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)))',
+              fontSize: 'var(--scoreboard-badge-size)',
               letterSpacing: '0.16em',
               color: palette.bg,
               background: palette.gold,
-              padding:
-                'clamp(2px, calc(0.3cqi * var(--scoreboard-scale, 1)), calc(8px * var(--scoreboard-scale, 1))) clamp(5px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1)))',
+              padding: 'var(--scoreboard-badge-padding)',
               borderRadius: 0,
             }}
           >
@@ -96,7 +92,7 @@ export function ParticipantRow({
         <FlipNumber
           value={participant.hotdogs}
           color={palette.ink}
-          size="clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1)))"
+          size="var(--scoreboard-number-size)"
           hot={isHot}
         />
       </div>
@@ -105,7 +101,7 @@ export function ParticipantRow({
         <FlipNumber
           value={participant.beers}
           color={palette.ink}
-          size="clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1)))"
+          size="var(--scoreboard-number-size)"
           hot={isHot}
         />
       </div>
@@ -116,14 +112,13 @@ export function ParticipantRow({
           borderLeft: `1px solid ${palette.line}`,
           background: isLeader ? palette.gold : 'transparent',
           color: isLeader ? palette.bg : palette.ink,
-          padding:
-            'clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0',
+          padding: 'var(--scoreboard-total-pad-y) 0',
         }}
       >
         <FlipNumber
           value={total}
           color={isLeader ? palette.bg : palette.gold}
-          size="clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1)))"
+          size="var(--scoreboard-number-size)"
         />
       </div>
     </div>

@@ -15,6 +15,9 @@ export const INITIAL_GAME: GameState = {
   inningOrdinal: '6th',
   inningState: 'Bottom',
   abstractState: 'Live',
+  scheduledStart: null,
+  scheduledTimeZone: 'America/New_York',
+  venueName: 'Great American Ball Park',
 };
 
 export const INITIAL_PARTICIPANTS: Participant[] = [

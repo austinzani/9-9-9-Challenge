@@ -18,6 +18,11 @@ def test_parse_mlb_schedule_payload_maps_linescore_shape() -> None:
                 "games": [
                     {
                         "status": {"abstractGameState": "Live"},
+                        "gameDate": "2026-05-31T17:40:00Z",
+                        "venue": {
+                            "name": "Great American Ball Park",
+                            "timeZone": {"id": "America/New_York"},
+                        },
                         "teams": {
                             "away": {"team": {"abbreviation": "CHC", "teamName": "Cubs"}},
                             "home": {"team": {"abbreviation": "CIN", "teamName": "Reds"}},
@@ -46,6 +51,9 @@ def test_parse_mlb_schedule_payload_maps_linescore_shape() -> None:
     assert parsed["homeAbbr"] == "CIN"
     assert parsed["inningState"] == "Bottom"
     assert parsed["inningOrdinal"] == "7th"
+    assert parsed["scheduledStart"] == "2026-05-31T17:40:00Z"
+    assert parsed["scheduledTimeZone"] == "America/New_York"
+    assert parsed["venueName"] == "Great American Ball Park"
     assert parsed["R"] == {"away": 2, "home": 1}
 
 
@@ -55,6 +63,8 @@ def test_parse_espn_payload_maps_fallback_shape() -> None:
             {
                 "competitions": [
                     {
+                        "date": "2026-05-31T17:40:00Z",
+                        "venue": {"fullName": "Great American Ball Park"},
                         "status": {
                             "period": 6,
                             "detail": "Top 6th",
@@ -85,4 +95,7 @@ def test_parse_espn_payload_maps_fallback_shape() -> None:
     assert parsed["awayAbbr"] == "CHC"
     assert parsed["homeAbbr"] == "CIN"
     assert parsed["inningOrdinal"] == "6th"
+    assert parsed["scheduledStart"] == "2026-05-31T17:40:00Z"
+    assert parsed["scheduledTimeZone"] is None
+    assert parsed["venueName"] == "Great American Ball Park"
     assert parsed["R"] == {"away": 4, "home": 3}

@@ -11,8 +11,7 @@ interface ColumnHeaderProps {
 export function ColumnHeader({ palette }: ColumnHeaderProps) {
   const labelStyle: CSSProperties = {
     fontFamily: '"DM Mono", monospace',
-    fontSize:
-      'clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1)))',
+    fontSize: 'var(--scoreboard-header-label-size)',
     color: palette.inkDim,
     letterSpacing: '0.18em',
   };
@@ -23,8 +22,8 @@ export function ColumnHeader({ palette }: ColumnHeaderProps) {
   };
 
   const iconBoxStyle: CSSProperties = {
-    width: 'clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1)))',
-    height: 'clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1)))',
+    width: 'var(--scoreboard-header-icon-box-size)',
+    height: 'var(--scoreboard-header-icon-box-size)',
     display: 'grid',
     placeItems: 'center',
   };
@@ -52,7 +51,7 @@ export function ColumnHeader({ palette }: ColumnHeaderProps) {
         <div style={iconBoxStyle}>
           <HotdogIcon
             color={palette.ink}
-            size="clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1)))"
+            size="var(--scoreboard-header-hotdog-size)"
           />
         </div>
       </div>
@@ -60,7 +59,7 @@ export function ColumnHeader({ palette }: ColumnHeaderProps) {
         <div style={iconBoxStyle}>
           <BeerIcon
             color={palette.ink}
-            size="clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1)))"
+            size="var(--scoreboard-header-beer-size)"
           />
         </div>
       </div>
@@ -69,8 +68,7 @@ export function ColumnHeader({ palette }: ColumnHeaderProps) {
           fontFamily: '"Big Shoulders Stencil Display", sans-serif',
           fontWeight: 700,
           color: palette.gold,
-          fontSize:
-            'clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1)))',
+          fontSize: 'var(--scoreboard-header-total-size)',
           textAlign: 'center',
           letterSpacing: '0.04em',
         }}

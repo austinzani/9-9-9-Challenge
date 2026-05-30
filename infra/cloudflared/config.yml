@@ -1,18 +1,30 @@
-# Cloudflare Tunnel ingress for the Pi-hosted API.
+# Cloudflare Tunnel ingress for the Pi-hosted challenge app.
 #
-# `api.999.austinzani.dev` is public for scoreboard reads + websocket updates.
-# Admin paths are explicitly blocked at the tunnel edge so `/admin` and
-# `/api/admin/*` remain localhost-only.
+# This repo expects the 9-9-9 API + static frontend to listen on port 8001 so it
+# can coexist with the existing zani-pi service on 8000.
+#
+# If you reuse the Pi's existing Cloudflare tunnel, merge the ingress rules below
+# into ~/.cloudflared/config.yml instead of running a second tunnel service.
+# If you create a dedicated tunnel for the challenge, place its credential file at
+# /home/austinzani/.cloudflared/999-challenge.json and enable 999-tunnel.service.
 tunnel: 999-challenge
-credentials-file: /etc/cloudflared/999-challenge.json
+credentials-file: /home/austinzani/.cloudflared/999-challenge.json
 
 ingress:
-  - hostname: api.999.austinzani.dev
+  - hostname: 999.austinzani.dev
     path: /admin*
     service: http_status:404
-  - hostname: api.999.austinzani.dev
+  - hostname: 999.austinzani.dev
     path: /api/admin*
     service: http_status:404
-  - hostname: api.999.austinzani.dev
-    service: http://localhost:8000
+  - hostname: 999.austinzani.dev
+    service: http://localhost:8001
+  - hostname: 999-api.austinzani.dev
+    path: /admin*
+    service: http_status:404
+  - hostname: 999-api.austinzani.dev
+    path: /api/admin*
+    service: http_status:404
+  - hostname: 999-api.austinzani.dev
+    service: http://localhost:8001
   - service: http_status:404

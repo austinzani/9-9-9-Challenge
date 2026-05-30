@@ -5,7 +5,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
   style="width: 3840px; height: 2160px;"
 >
   <div
-    style="--scoreboard-grid-template: clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))); --scoreboard-linescore-template: minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr)); --scoreboard-grid-pad-x: clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1))); --scoreboard-row-pad-y: clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1))); --scoreboard-header-pad-y: clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1))); background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto;"
+    style="--scoreboard-grid-template: clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))); --scoreboard-linescore-template: minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr)); --scoreboard-grid-pad-x: clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1))); --scoreboard-row-pad-y: clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1))); --scoreboard-header-pad-y: clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1))); --scoreboard-rank-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); --scoreboard-name-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); --scoreboard-name-gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-badge-size: clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-badge-padding: clamp(2px, calc(0.3cqi * var(--scoreboard-scale, 1)), calc(8px * var(--scoreboard-scale, 1))) clamp(5px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-number-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); --scoreboard-total-pad-y: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-header-label-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-header-icon-box-size: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); --scoreboard-header-hotdog-size: clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1))); --scoreboard-header-beer-size: clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); --scoreboard-header-total-size: clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))); --scoreboard-status-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-health-pill-size: clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(26px * var(--scoreboard-scale, 1))); --scoreboard-status-gap: clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-linescore-header-height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); --scoreboard-linescore-row-height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); --scoreboard-linescore-team-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); --scoreboard-linescore-score-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); --scoreboard-footer-font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-footer-padding: clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1))); --scoreboard-footer-gap: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-qr-width: clamp(120px, calc(10cqi * var(--scoreboard-scale, 1)), calc(280px * var(--scoreboard-scale, 1))); background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto; display: flex; flex-direction: column;"
   >
     <div
       style="position: sticky; top: 0px; z-index: 5; background: rgb(29, 66, 51);"
@@ -14,17 +14,13 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
         style="background: rgb(23, 53, 39); border-bottom: 2px solid rgb(14, 36, 25); padding: calc(54px + env(safe-area-inset-top, 0px)) var(--scoreboard-grid-pad-x) clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1)));"
       >
         <div
-          style="display: flex; align-items: center; justify-content: space-between; padding: 0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
+          style="display: flex; align-items: center; justify-content: space-between; padding: 0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: var(--scoreboard-status-size); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
         >
           <span>
-            ● LIVE ·
-             
-            BOTTOM
-             
-            6TH
+            ● LIVE · BOTTOM 6TH
           </span>
           <span
-            style="display: flex; align-items: center; gap: clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+            style="display: flex; align-items: center; gap: var(--scoreboard-status-gap);"
           >
             <span>
               GABP
@@ -38,65 +34,65 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%;"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             />
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               1
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               2
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               4
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               5
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               6
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               7
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               8
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               9
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               R
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               H
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               E
             </div>
@@ -105,67 +101,67 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%; border-top: 1px solid rgb(14, 36, 25);"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); color: rgb(240, 230, 200); background: transparent;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-team-size); color: rgb(240, 230, 200); background: transparent;"
             >
               CHC
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               5
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               0
             </div>
@@ -174,67 +170,67 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%; border-top: 1px solid rgb(14, 36, 25);"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-team-size); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2);"
             >
               CIN
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               2
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               1
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               6
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               1
             </div>
@@ -245,12 +241,12 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-header-pad-y) var(--scoreboard-grid-pad-x); background: rgb(35, 76, 58); border-top: 1px solid rgb(14, 36, 25); border-bottom: 2px solid rgb(14, 36, 25); box-shadow: 0 4px 0 0 #1d4233, 0 6px 10px -4px rgba(0,0,0,0.4);"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
         >
           #
         </div>
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
         >
           PLAYER
         </div>
@@ -258,13 +254,13 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="display: grid; place-items: center;"
         >
           <div
-            style="width: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); height: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); display: grid; place-items: center;"
+            style="width: var(--scoreboard-header-icon-box-size); height: var(--scoreboard-header-icon-box-size); display: grid; place-items: center;"
           >
             <svg
-              height="calc(clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1))) * 0.65)"
+              height="calc(var(--scoreboard-header-hotdog-size) * 0.65)"
               style="display: block;"
               viewBox="0 0 40 26"
-              width="clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1)))"
+              width="var(--scoreboard-header-hotdog-size)"
             >
               <rect
                 fill="none"
@@ -299,13 +295,13 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="display: grid; place-items: center;"
         >
           <div
-            style="width: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); height: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); display: grid; place-items: center;"
+            style="width: var(--scoreboard-header-icon-box-size); height: var(--scoreboard-header-icon-box-size); display: grid; place-items: center;"
           >
             <svg
-              height="clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1)))"
+              height="var(--scoreboard-header-beer-size)"
               style="display: block;"
               viewBox="0 0 28 32"
-              width="calc(clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))) * 0.85)"
+              width="calc(var(--scoreboard-header-beer-size) * 0.85)"
             >
               <rect
                 fill="none"
@@ -358,25 +354,25 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           </div>
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))); text-align: center; letter-spacing: 0.04em;"
+          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: var(--scoreboard-header-total-size); text-align: center; letter-spacing: 0.04em;"
         >
           TOT
         </div>
       </div>
     </div>
     <div
-      style="background: rgb(29, 66, 51);"
+      style="background: rgb(29, 66, 51); flex: 1 1 0%; display: flex; flex-direction: column;"
     >
       <div
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: linear-gradient(90deg, #d6a23a22 0%, transparent 80%); position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           01
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: 0 0 14px #d6a23a44;"
@@ -388,7 +384,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             3
           </span>
@@ -397,16 +393,16 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             7
           </span>
@@ -416,12 +412,12 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           02
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: none;"
@@ -433,7 +429,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             2
           </span>
@@ -442,16 +438,16 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             6
           </span>
@@ -461,12 +457,12 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           03
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: none;"
@@ -478,7 +474,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             1
           </span>
@@ -487,16 +483,16 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             3
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
@@ -504,10 +500,10 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
       </div>
     </div>
     <div
-      style="padding: clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1))); text-align: center; font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
+      style="padding: var(--scoreboard-footer-padding); text-align: center; font-family: "DM Mono", monospace; font-size: var(--scoreboard-footer-font-size); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
     >
       <div
-        style="margin-bottom: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1)));"
+        style="margin-bottom: var(--scoreboard-footer-gap);"
       >
         9·9·9 CHALLENGE — MAY 31, 2026
       </div>
@@ -526,7 +522,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
   style="width: 1920px; height: 1080px;"
 >
   <div
-    style="--scoreboard-grid-template: clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))); --scoreboard-linescore-template: minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr)); --scoreboard-grid-pad-x: clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1))); --scoreboard-row-pad-y: clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1))); --scoreboard-header-pad-y: clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1))); background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto;"
+    style="--scoreboard-grid-template: clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))); --scoreboard-linescore-template: minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr)); --scoreboard-grid-pad-x: clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1))); --scoreboard-row-pad-y: clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1))); --scoreboard-header-pad-y: clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1))); --scoreboard-rank-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); --scoreboard-name-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); --scoreboard-name-gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-badge-size: clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-badge-padding: clamp(2px, calc(0.3cqi * var(--scoreboard-scale, 1)), calc(8px * var(--scoreboard-scale, 1))) clamp(5px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-number-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); --scoreboard-total-pad-y: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-header-label-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-header-icon-box-size: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); --scoreboard-header-hotdog-size: clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1))); --scoreboard-header-beer-size: clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); --scoreboard-header-total-size: clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))); --scoreboard-status-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-health-pill-size: clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(26px * var(--scoreboard-scale, 1))); --scoreboard-status-gap: clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-linescore-header-height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); --scoreboard-linescore-row-height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); --scoreboard-linescore-team-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); --scoreboard-linescore-score-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); --scoreboard-footer-font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-footer-padding: clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1))); --scoreboard-footer-gap: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-qr-width: clamp(120px, calc(10cqi * var(--scoreboard-scale, 1)), calc(280px * var(--scoreboard-scale, 1))); background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto; display: flex; flex-direction: column;"
   >
     <div
       style="position: sticky; top: 0px; z-index: 5; background: rgb(29, 66, 51);"
@@ -535,17 +531,13 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
         style="background: rgb(23, 53, 39); border-bottom: 2px solid rgb(14, 36, 25); padding: calc(54px + env(safe-area-inset-top, 0px)) var(--scoreboard-grid-pad-x) clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1)));"
       >
         <div
-          style="display: flex; align-items: center; justify-content: space-between; padding: 0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
+          style="display: flex; align-items: center; justify-content: space-between; padding: 0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: var(--scoreboard-status-size); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
         >
           <span>
-            ● LIVE ·
-             
-            BOTTOM
-             
-            6TH
+            ● LIVE · BOTTOM 6TH
           </span>
           <span
-            style="display: flex; align-items: center; gap: clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+            style="display: flex; align-items: center; gap: var(--scoreboard-status-gap);"
           >
             <span>
               GABP
@@ -559,65 +551,65 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%;"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             />
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               1
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               2
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               4
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               5
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               6
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               7
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               8
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               9
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               R
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               H
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               E
             </div>
@@ -626,67 +618,67 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%; border-top: 1px solid rgb(14, 36, 25);"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); color: rgb(240, 230, 200); background: transparent;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-team-size); color: rgb(240, 230, 200); background: transparent;"
             >
               CHC
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               5
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               0
             </div>
@@ -695,67 +687,67 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%; border-top: 1px solid rgb(14, 36, 25);"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-team-size); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2);"
             >
               CIN
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               2
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               1
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               6
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               1
             </div>
@@ -766,12 +758,12 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-header-pad-y) var(--scoreboard-grid-pad-x); background: rgb(35, 76, 58); border-top: 1px solid rgb(14, 36, 25); border-bottom: 2px solid rgb(14, 36, 25); box-shadow: 0 4px 0 0 #1d4233, 0 6px 10px -4px rgba(0,0,0,0.4);"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
         >
           #
         </div>
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
         >
           PLAYER
         </div>
@@ -779,13 +771,13 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="display: grid; place-items: center;"
         >
           <div
-            style="width: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); height: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); display: grid; place-items: center;"
+            style="width: var(--scoreboard-header-icon-box-size); height: var(--scoreboard-header-icon-box-size); display: grid; place-items: center;"
           >
             <svg
-              height="calc(clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1))) * 0.65)"
+              height="calc(var(--scoreboard-header-hotdog-size) * 0.65)"
               style="display: block;"
               viewBox="0 0 40 26"
-              width="clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1)))"
+              width="var(--scoreboard-header-hotdog-size)"
             >
               <rect
                 fill="none"
@@ -820,13 +812,13 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="display: grid; place-items: center;"
         >
           <div
-            style="width: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); height: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); display: grid; place-items: center;"
+            style="width: var(--scoreboard-header-icon-box-size); height: var(--scoreboard-header-icon-box-size); display: grid; place-items: center;"
           >
             <svg
-              height="clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1)))"
+              height="var(--scoreboard-header-beer-size)"
               style="display: block;"
               viewBox="0 0 28 32"
-              width="calc(clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))) * 0.85)"
+              width="calc(var(--scoreboard-header-beer-size) * 0.85)"
             >
               <rect
                 fill="none"
@@ -879,25 +871,25 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           </div>
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))); text-align: center; letter-spacing: 0.04em;"
+          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: var(--scoreboard-header-total-size); text-align: center; letter-spacing: 0.04em;"
         >
           TOT
         </div>
       </div>
     </div>
     <div
-      style="background: rgb(29, 66, 51);"
+      style="background: rgb(29, 66, 51); flex: 1 1 0%; display: flex; flex-direction: column;"
     >
       <div
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: linear-gradient(90deg, #d6a23a22 0%, transparent 80%); position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           01
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: 0 0 14px #d6a23a44;"
@@ -909,7 +901,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             3
           </span>
@@ -918,16 +910,16 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             7
           </span>
@@ -937,12 +929,12 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           02
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: none;"
@@ -954,7 +946,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             2
           </span>
@@ -963,16 +955,16 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             6
           </span>
@@ -982,12 +974,12 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           03
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: none;"
@@ -999,7 +991,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             1
           </span>
@@ -1008,16 +1000,16 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             3
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
@@ -1025,10 +1017,10 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
       </div>
     </div>
     <div
-      style="padding: clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1))); text-align: center; font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
+      style="padding: var(--scoreboard-footer-padding); text-align: center; font-family: "DM Mono", monospace; font-size: var(--scoreboard-footer-font-size); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
     >
       <div
-        style="margin-bottom: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1)));"
+        style="margin-bottom: var(--scoreboard-footer-gap);"
       >
         9·9·9 CHALLENGE — MAY 31, 2026
       </div>
@@ -1047,7 +1039,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
   style="width: 390px; height: 844px;"
 >
   <div
-    style="--scoreboard-grid-template: clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))); --scoreboard-linescore-template: minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr)); --scoreboard-grid-pad-x: clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1))); --scoreboard-row-pad-y: clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1))); --scoreboard-header-pad-y: clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1))); background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto;"
+    style="--scoreboard-grid-template: clamp(32px, calc(3.1cqi * var(--scoreboard-scale, 1)), calc(104px * var(--scoreboard-scale, 1))) minmax(0, 1fr) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))) clamp(58px, calc(5.6cqi * var(--scoreboard-scale, 1)), calc(162px * var(--scoreboard-scale, 1))); --scoreboard-linescore-template: minmax(clamp(52px, calc(5.2cqi * var(--scoreboard-scale, 1)), calc(152px * var(--scoreboard-scale, 1))), 1.35fr) repeat(9, minmax(clamp(20px, calc(2cqi * var(--scoreboard-scale, 1)), calc(60px * var(--scoreboard-scale, 1))), 1fr)) repeat(3, minmax(clamp(24px, calc(2.35cqi * var(--scoreboard-scale, 1)), calc(72px * var(--scoreboard-scale, 1))), 1.12fr)); --scoreboard-grid-pad-x: clamp(12px, calc(1.6cqi * var(--scoreboard-scale, 1)), calc(44px * var(--scoreboard-scale, 1))); --scoreboard-row-pad-y: clamp(8px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1))); --scoreboard-header-pad-y: clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(36px * var(--scoreboard-scale, 1))); --scoreboard-rank-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); --scoreboard-name-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); --scoreboard-name-gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-badge-size: clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-badge-padding: clamp(2px, calc(0.3cqi * var(--scoreboard-scale, 1)), calc(8px * var(--scoreboard-scale, 1))) clamp(5px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-number-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); --scoreboard-total-pad-y: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-header-label-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-header-icon-box-size: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); --scoreboard-header-hotdog-size: clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1))); --scoreboard-header-beer-size: clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); --scoreboard-header-total-size: clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))); --scoreboard-status-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-health-pill-size: clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(26px * var(--scoreboard-scale, 1))); --scoreboard-status-gap: clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); --scoreboard-linescore-header-height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); --scoreboard-linescore-row-height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); --scoreboard-linescore-team-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); --scoreboard-linescore-score-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); --scoreboard-footer-font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); --scoreboard-footer-padding: clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1))); --scoreboard-footer-gap: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))); --scoreboard-qr-width: clamp(120px, calc(10cqi * var(--scoreboard-scale, 1)), calc(280px * var(--scoreboard-scale, 1))); background: rgb(29, 66, 51); color: rgb(240, 230, 200); min-height: 100%; container-type: inline-size; font-family: "Oswald", system-ui, sans-serif; background-image: radial-gradient(rgba(0,0,0,0.18) 1px, transparent 1px), repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 4px); background-size: 4px 4px, auto; display: flex; flex-direction: column;"
   >
     <div
       style="position: sticky; top: 0px; z-index: 5; background: rgb(29, 66, 51);"
@@ -1056,17 +1048,13 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
         style="background: rgb(23, 53, 39); border-bottom: 2px solid rgb(14, 36, 25); padding: calc(54px + env(safe-area-inset-top, 0px)) var(--scoreboard-grid-pad-x) clamp(10px, calc(1.2cqi * var(--scoreboard-scale, 1)), calc(32px * var(--scoreboard-scale, 1)));"
       >
         <div
-          style="display: flex; align-items: center; justify-content: space-between; padding: 0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
+          style="display: flex; align-items: center; justify-content: space-between; padding: 0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: var(--scoreboard-status-size); letter-spacing: 0.18em; color: rgb(201, 185, 136);"
         >
           <span>
-            ● LIVE ·
-             
-            BOTTOM
-             
-            6TH
+            ● LIVE · BOTTOM 6TH
           </span>
           <span
-            style="display: flex; align-items: center; gap: clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+            style="display: flex; align-items: center; gap: var(--scoreboard-status-gap);"
           >
             <span>
               GABP
@@ -1080,65 +1068,65 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%;"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             />
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               1
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               2
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               4
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               5
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               6
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               7
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               8
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136);"
             >
               9
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               R
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); border-right: 1px solid rgb(14, 36, 25); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               H
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1))); font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-header-height); font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(214, 162, 58); font-weight: 700;"
             >
               E
             </div>
@@ -1147,67 +1135,67 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%; border-top: 1px solid rgb(14, 36, 25);"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); color: rgb(240, 230, 200); background: transparent;"
+              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-team-size); color: rgb(240, 230, 200); background: transparent;"
             >
               CHC
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               5
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               0
             </div>
@@ -1216,67 +1204,67 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
             style="display: grid; grid-template-columns: var(--scoreboard-linescore-template); align-items: stretch; width: 100%; border-top: 1px solid rgb(14, 36, 25);"
           >
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: flex-start; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); padding-left: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-team-size); color: rgb(240, 230, 200); background: rgba(200, 16, 46, 0.2);"
             >
               CIN
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               2
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               1
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               0
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(240, 230, 200);"
             >
               ·
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               3
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); border-right: 1px solid rgb(14, 36, 25); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               6
             </div>
             <div
-              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1))); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
+              style="min-width: 0; display: flex; align-items: center; justify-content: center; height: var(--scoreboard-linescore-row-height); font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: var(--scoreboard-linescore-score-size); line-height: 1; font-variant-numeric: tabular-nums; color: rgb(214, 162, 58); background: rgb(14, 36, 25);"
             >
               1
             </div>
@@ -1287,12 +1275,12 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-header-pad-y) var(--scoreboard-grid-pad-x); background: rgb(35, 76, 58); border-top: 1px solid rgb(14, 36, 25); border-bottom: 2px solid rgb(14, 36, 25); box-shadow: 0 4px 0 0 #1d4233, 0 6px 10px -4px rgba(0,0,0,0.4);"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
         >
           #
         </div>
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-header-label-size); color: rgb(201, 185, 136); letter-spacing: 0.18em;"
         >
           PLAYER
         </div>
@@ -1300,13 +1288,13 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="display: grid; place-items: center;"
         >
           <div
-            style="width: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); height: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); display: grid; place-items: center;"
+            style="width: var(--scoreboard-header-icon-box-size); height: var(--scoreboard-header-icon-box-size); display: grid; place-items: center;"
           >
             <svg
-              height="calc(clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1))) * 0.65)"
+              height="calc(var(--scoreboard-header-hotdog-size) * 0.65)"
               style="display: block;"
               viewBox="0 0 40 26"
-              width="clamp(26px, calc(2.6cqi * var(--scoreboard-scale, 1)), calc(82px * var(--scoreboard-scale, 1)))"
+              width="var(--scoreboard-header-hotdog-size)"
             >
               <rect
                 fill="none"
@@ -1341,13 +1329,13 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="display: grid; place-items: center;"
         >
           <div
-            style="width: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); height: clamp(28px, calc(2.9cqi * var(--scoreboard-scale, 1)), calc(90px * var(--scoreboard-scale, 1))); display: grid; place-items: center;"
+            style="width: var(--scoreboard-header-icon-box-size); height: var(--scoreboard-header-icon-box-size); display: grid; place-items: center;"
           >
             <svg
-              height="clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1)))"
+              height="var(--scoreboard-header-beer-size)"
               style="display: block;"
               viewBox="0 0 28 32"
-              width="calc(clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))) * 0.85)"
+              width="calc(var(--scoreboard-header-beer-size) * 0.85)"
             >
               <rect
                 fill="none"
@@ -1400,25 +1388,25 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           </div>
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: clamp(16px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))); text-align: center; letter-spacing: 0.04em;"
+          style="font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 700; color: rgb(214, 162, 58); font-size: var(--scoreboard-header-total-size); text-align: center; letter-spacing: 0.04em;"
         >
           TOT
         </div>
       </div>
     </div>
     <div
-      style="background: rgb(29, 66, 51);"
+      style="background: rgb(29, 66, 51); flex: 1 1 0%; display: flex; flex-direction: column;"
     >
       <div
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: linear-gradient(90deg, #d6a23a22 0%, transparent 80%); position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(214, 162, 58); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           01
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: 0 0 14px #d6a23a44;"
@@ -1430,7 +1418,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             3
           </span>
@@ -1439,16 +1427,16 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: rgb(214, 162, 58); color: rgb(29, 66, 51); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(29, 66, 51); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             7
           </span>
@@ -1458,12 +1446,12 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           02
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: none;"
@@ -1475,7 +1463,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             2
           </span>
@@ -1484,16 +1472,16 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             6
           </span>
@@ -1503,12 +1491,12 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
         style="display: grid; grid-template-columns: var(--scoreboard-grid-template); align-items: center; padding: var(--scoreboard-row-pad-y) var(--scoreboard-grid-pad-x); border-bottom: 1px solid rgb(14, 36, 25); background: transparent; position: relative; transition: background 0.4s ease;"
       >
         <div
-          style="font-family: "DM Mono", monospace; font-size: clamp(12px, calc(1.3cqi * var(--scoreboard-scale, 1)), calc(34px * var(--scoreboard-scale, 1))); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
+          style="font-family: "DM Mono", monospace; font-size: var(--scoreboard-rank-size); color: rgb(201, 185, 136); font-weight: 700; font-variant-numeric: tabular-nums;"
         >
           03
         </div>
         <div
-          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: clamp(24px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(84px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)));"
+          style="font-family: "Big Shoulders Stencil Display", "Oswald", sans-serif; font-weight: 600; font-size: var(--scoreboard-name-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: 0.01em; text-transform: uppercase; display: flex; align-items: center; gap: var(--scoreboard-name-gap);"
         >
           <span
             style="text-shadow: none;"
@@ -1520,7 +1508,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             1
           </span>
@@ -1529,16 +1517,16 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           style="text-align: center;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(240, 230, 200); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             3
           </span>
         </div>
         <div
-          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1))) 0;"
+          style="text-align: center; border-left: 1px solid rgb(14, 36, 25); background: transparent; color: rgb(240, 230, 200); padding: var(--scoreboard-total-pad-y) 0;"
         >
           <span
-            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: clamp(32px, calc(3.4cqi * var(--scoreboard-scale, 1)), calc(94px * var(--scoreboard-scale, 1))); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
+            style="display: inline-block; font-family: "Big Shoulders Display", "Oswald", sans-serif; font-weight: 800; font-size: var(--scoreboard-number-size); line-height: 1; color: rgb(214, 162, 58); letter-spacing: -0.01em; transform: rotateX(0) scaleY(1); transform-origin: center; transition: transform 0.16s cubic-bezier(.5,0,.5,1); text-shadow: none; font-variant-numeric: tabular-nums;"
           >
             4
           </span>
@@ -1546,10 +1534,10 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
       </div>
     </div>
     <div
-      style="padding: clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1))); text-align: center; font-family: "DM Mono", monospace; font-size: clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1))); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
+      style="padding: var(--scoreboard-footer-padding); text-align: center; font-family: "DM Mono", monospace; font-size: var(--scoreboard-footer-font-size); letter-spacing: 0.18em; color: rgb(201, 185, 136); border-top: 1px solid rgb(14, 36, 25); background: rgb(23, 53, 39);"
     >
       <div
-        style="margin-bottom: clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1)));"
+        style="margin-bottom: var(--scoreboard-footer-gap);"
       >
         9·9·9 CHALLENGE — MAY 31, 2026
       </div>

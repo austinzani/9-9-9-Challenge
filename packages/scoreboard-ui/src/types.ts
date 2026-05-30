@@ -23,6 +23,9 @@ export interface GameState {
   inningOrdinal: string;
   inningState: 'Top' | 'Bottom' | 'Middle' | 'End';
   abstractState: string;
+  scheduledStart?: string | null;
+  scheduledTimeZone?: string | null;
+  venueName?: string | null;
 }
 
 /** Participant counts for the 9-9-9 challenge. */

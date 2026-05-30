@@ -19,12 +19,10 @@ export function Footer({
   return (
     <div
       style={{
-        padding:
-          'clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(54px * var(--scoreboard-scale, 1))) clamp(16px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1))) clamp(28px, calc(2.8cqi * var(--scoreboard-scale, 1)), calc(80px * var(--scoreboard-scale, 1)))',
+        padding: 'var(--scoreboard-footer-padding)',
         textAlign: 'center',
         fontFamily: '"DM Mono", monospace',
-        fontSize:
-          'clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1)))',
+        fontSize: 'var(--scoreboard-footer-font-size)',
         letterSpacing: '0.18em',
         color: palette.inkDim,
         borderTop: `1px solid ${palette.line}`,
@@ -33,8 +31,7 @@ export function Footer({
     >
       <div
         style={{
-          marginBottom:
-            'clamp(4px, calc(0.5cqi * var(--scoreboard-scale, 1)), calc(14px * var(--scoreboard-scale, 1)))',
+          marginBottom: 'var(--scoreboard-footer-gap)',
         }}
       >
         9·9·9 CHALLENGE — MAY 31, 2026
@@ -43,16 +40,14 @@ export function Footer({
       {showQrCode && (
         <div
           style={{
-            marginTop:
-              'clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)))',
+            marginTop: 'calc(var(--scoreboard-footer-gap) * 2)',
             display: 'flex',
             justifyContent: 'center',
           }}
         >
           <div
             style={{
-              width:
-                'clamp(120px, calc(10cqi * var(--scoreboard-scale, 1)), calc(280px * var(--scoreboard-scale, 1)))',
+              width: 'var(--scoreboard-qr-width)',
             }}
           >
             <QRCodeSVG

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 
-import { Scoreboard } from '@challenge/scoreboard-ui';
+import { Scoreboard, type GameState } from '@challenge/scoreboard-ui';
 
 import { INITIAL_GAME, INITIAL_PARTICIPANTS } from './mockData';
 import { RegistrationModal } from './RegistrationModal';
@@ -31,8 +31,33 @@ interface BurstParticle {
   scale: number;
 }
 
+const EMOJI_FONT_STACK = '"Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif';
+
+const PRODUCTION_FALLBACK_GAME: GameState = {
+  awayAbbr: 'AWY',
+  awayName: 'AWAY',
+  homeAbbr: 'HME',
+  homeName: 'HOME',
+  innings: {
+    away: [null, null, null, null, null, null, null, null, null],
+    home: [null, null, null, null, null, null, null, null, null],
+  },
+  R: { away: 0, home: 0 },
+  H: { away: 0, home: 0 },
+  E: { away: 0, home: 0 },
+  inningOrdinal: '1st',
+  inningState: 'Top',
+  abstractState: 'Preview',
+  scheduledStart: null,
+  scheduledTimeZone: null,
+  venueName: null,
+};
+
 /** Thin view shell around the live scoreboard socket hook. */
 export function App() {
+  const initialGame = import.meta.env.DEV ? INITIAL_GAME : PRODUCTION_FALLBACK_GAME;
+  const initialParticipants = import.meta.env.DEV ? INITIAL_PARTICIPANTS : [];
+
   const {
     game,
     participants,
@@ -44,8 +69,8 @@ export function App() {
     celebrationName,
     registerParticipant,
   } = useScoreboardSocket({
-    initialGame: INITIAL_GAME,
-    initialParticipants: INITIAL_PARTICIPANTS,
+    initialGame,
+    initialParticipants,
   });
 
   const isKioskMode = useMemo(() => {
@@ -208,6 +233,51 @@ export function App() {
     [debugParticipants, debugSelectedUid]
   );
 
+  const handleRegisterParticipant = useCallback(
+    async (name: string) => {
+      if (!registration) {
+        throw new Error('No registration is currently pending.');
+      }
+
+      const activeRegistration = registration;
+      const result = await registerParticipant(name);
+
+      const creditedForPrimaryStation =
+        activeRegistration.station === 'hotdog' ? result.creditedHotdogs : result.creditedBeers;
+      const creditedForSecondaryStation =
+        activeRegistration.station === 'hotdog' ? result.creditedBeers : result.creditedHotdogs;
+      const feedbackStation =
+        creditedForPrimaryStation > 0
+          ? activeRegistration.station
+          : creditedForSecondaryStation > 0
+            ? activeRegistration.station === 'hotdog'
+              ? 'beer'
+              : 'hotdog'
+            : activeRegistration.station;
+      const fallbackPrimaryPending =
+        activeRegistration.station === 'hotdog'
+          ? activeRegistration.hotdogPending
+          : activeRegistration.beerPending;
+      const feedbackDelta =
+        feedbackStation === 'hotdog'
+          ? Math.max(result.creditedHotdogs, feedbackStation === activeRegistration.station ? fallbackPrimaryPending : 0)
+          : Math.max(result.creditedBeers, feedbackStation === activeRegistration.station ? fallbackPrimaryPending : 0);
+
+      if (result.status === 'registered' && feedbackDelta > 0) {
+        syntheticTapIdRef.current += 1;
+        triggerTapVisual({
+          id: syntheticTapIdRef.current,
+          playerName: result.name || name.trim(),
+          station: feedbackStation,
+          delta: feedbackDelta,
+        });
+      }
+
+      return result;
+    },
+    [registerParticipant, registration, triggerTapVisual]
+  );
+
   return (
     <>
       <div id="scoreboard-shell" className={isKioskMode ? 'kiosk' : undefined} style={shellStyle}>
@@ -260,10 +330,10 @@ export function App() {
       {registration && (
         <RegistrationModal
           uid={registration.uid}
-          station={registration.station}
           hotdogPending={registration.hotdogPending}
           beerPending={registration.beerPending}
-          onSubmit={registerParticipant}
+          isKioskMode={isKioskMode}
+          onSubmit={handleRegisterParticipant}
         />
       )}
 
@@ -369,6 +439,7 @@ function TapEmojiBurst({ burst, onComplete }: TapEmojiBurstProps) {
             style={{
               left: '50%',
               opacity,
+              fontFamily: EMOJI_FONT_STACK,
               transform: `translate3d(calc(-50% + ${translateX}px), ${translateY}px, 0) rotate(${rotationDeg}deg) scale(${particle.scale})`,
             }}
           >
@@ -385,9 +456,10 @@ function calculateScoreboardScale(width: number, height: number, isKioskMode: bo
   const extraGrowth = Math.max(0, growth - 1);
 
   if (isKioskMode) {
-    // Keep 1080p baseline stable, then scale up aggressively on large displays.
-    const boostedGrowth = extraGrowth * 0.85 + extraGrowth * extraGrowth * 0.55;
-    return clamp(1.35 + boostedGrowth, 1.35, 2.35);
+    // Portrait kiosk displays have a lot of vertical room but a narrower inline width,
+    // so use a much larger baseline scale and still allow extra growth on bigger screens.
+    const boostedGrowth = extraGrowth * 1.15 + extraGrowth * extraGrowth * 0.75;
+    return clamp(2.7 + boostedGrowth, 2.7, 3.8);
   }
 
   return clamp(1 + extraGrowth * 0.3, 1, 1.48);

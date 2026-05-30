@@ -11,7 +11,7 @@ if command -v unclutter >/dev/null 2>&1; then
   unclutter -idle 0.2 -root &
 fi
 
-URL="http://localhost/?mode=kiosk"
+URL="${CHALLENGE_LOCAL_URL:-http://127.0.0.1:8001/?mode=kiosk}"
 CHROMIUM_BIN=""
 
 if command -v chromium-browser >/dev/null 2>&1; then

@@ -2,13 +2,19 @@
 Description=9-9-9 Challenge Kiosk Display
 After=network-online.target graphical.target 999-api.service
 Wants=network-online.target
+Requires=999-api.service
 
 [Service]
 Type=simple
-User=pi
+User=austinzani
+WorkingDirectory=/home/austinzani/9-9-9-Challenge
 Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/pi/.Xauthority
-ExecStart=/bin/bash /opt/999/pi/scripts/launch-kiosk.sh
+Environment=XAUTHORITY=/home/austinzani/.Xauthority
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+Environment=CHALLENGE_LOCAL_URL=http://127.0.0.1:8001/?mode=kiosk
+ExecStart=/bin/bash /home/austinzani/9-9-9-Challenge/pi/scripts/launch-kiosk.sh
 Restart=always
 RestartSec=3
 

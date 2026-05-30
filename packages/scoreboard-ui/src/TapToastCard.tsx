@@ -8,6 +8,8 @@ interface TapToastCardProps {
   topInset?: number;
 }
 
+const EMOJI_FONT_STACK = '"Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif';
+
 /** Replaces the linescore panel with a live tap banner in kiosk feedback mode. */
 export function TapToastCard({
   palette,
@@ -49,10 +51,11 @@ export function TapToastCard({
       >
         <span
           style={{
-            fontFamily: '"DM Mono", monospace',
+            fontFamily: EMOJI_FONT_STACK,
             fontSize:
               'clamp(18px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1)))',
             color: accent,
+            lineHeight: 1,
           }}
         >
           {icon}

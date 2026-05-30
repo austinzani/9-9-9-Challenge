@@ -7,6 +7,40 @@ from copy import deepcopy
 from datetime import UTC, datetime
 from typing import Any
 
+TEAM_ABBREVIATIONS = {
+    108: "LAA",
+    109: "ARI",
+    110: "BAL",
+    111: "BOS",
+    112: "CHC",
+    113: "CIN",
+    114: "CLE",
+    115: "COL",
+    116: "DET",
+    117: "HOU",
+    118: "KC",
+    119: "LAD",
+    120: "WSH",
+    121: "NYM",
+    133: "OAK",
+    134: "PIT",
+    135: "SD",
+    136: "SEA",
+    137: "SF",
+    138: "STL",
+    139: "TB",
+    140: "TEX",
+    141: "TOR",
+    142: "MIN",
+    143: "PHI",
+    144: "ATL",
+    145: "CWS",
+    146: "MIA",
+    147: "NYY",
+    158: "MIL",
+    159: "TOR",
+}
+
 import httpx
 
 
@@ -29,6 +63,9 @@ def default_game_state() -> dict[str, Any]:
         "inningOrdinal": "1st",
         "inningState": "Top",
         "abstractState": "Preview",
+        "scheduledStart": None,
+        "scheduledTimeZone": None,
+        "venueName": None,
         "innings": {
             "away": [None] * 9,
             "home": [None] * 9,
@@ -67,6 +104,26 @@ def _normalize_innings(innings: list[dict[str, Any]]) -> dict[str, list[int | No
     }
 
 
+def team_abbreviation(team: dict[str, Any]) -> str:
+    """Resolve a stable MLB abbreviation from payload fields or team id."""
+    abbreviation = team.get("abbreviation") or team.get("teamName")
+    if abbreviation:
+        return str(abbreviation).upper()
+
+    team_id = team.get("id")
+    if isinstance(team_id, int) and team_id in TEAM_ABBREVIATIONS:
+        return TEAM_ABBREVIATIONS[team_id]
+
+    name = str(team.get("name") or "")
+    if name:
+        words = [word for word in name.split() if word]
+        if len(words) >= 2:
+            return "".join(word[0] for word in words[-2:]).upper()
+        return name[:3].upper()
+
+    return "UNK"
+
+
 def parse_mlb_schedule_payload(payload: dict[str, Any]) -> dict[str, Any] | None:
     """Parse MLB schedule + linescore payload into the shared scoreboard shape."""
     dates = payload.get("dates") or []
@@ -87,13 +144,16 @@ def parse_mlb_schedule_payload(payload: dict[str, Any]) -> dict[str, Any] | None
     inning_number = linescore.get("currentInning") or 1
 
     normalized = {
-        "awayAbbr": away_team.get("abbreviation") or away_team.get("teamName") or "AWY",
+        "awayAbbr": team_abbreviation(away_team),
         "awayName": away_team.get("teamName") or away_team.get("name") or "AWAY",
-        "homeAbbr": home_team.get("abbreviation") or home_team.get("teamName") or "HME",
+        "homeAbbr": team_abbreviation(home_team),
         "homeName": home_team.get("teamName") or home_team.get("name") or "HOME",
         "inningOrdinal": ordinal(int(inning_number)),
         "inningState": str(inning_state).title(),
         "abstractState": (game.get("status", {}) or {}).get("abstractGameState", "Preview"),
+        "scheduledStart": game.get("gameDate"),
+        "scheduledTimeZone": ((game.get("venue") or {}).get("timeZone") or {}).get("id"),
+        "venueName": (game.get("venue") or {}).get("name"),
         "innings": _normalize_innings(linescore.get("innings") or []),
         "R": {
             "away": int(linescore.get("teams", {}).get("away", {}).get("runs") or 0),
@@ -151,6 +211,9 @@ def parse_espn_payload(payload: dict[str, Any], team_abbr: str = "CIN") -> dict[
             "inningOrdinal": ordinal(inning),
             "inningState": clock_detail.title(),
             "abstractState": header.get("state", "live").title(),
+            "scheduledStart": competition.get("date") or event.get("date"),
+            "scheduledTimeZone": None,
+            "venueName": (competition.get("venue") or {}).get("fullName"),
             "innings": {
                 "away": away_lines[:9],
                 "home": home_lines[:9],
@@ -200,7 +263,7 @@ class MlbPoller:
     async def _fetch_from_mlb(self) -> dict[str, Any] | None:
         url = (
             "https://statsapi.mlb.com/api/v1/schedule"
-            f"?sportId=1&teamId={self.team_id}&date={self.game_date}&hydrate=linescore"
+            f"?sportId=1&teamId={self.team_id}&date={self.game_date}&hydrate=linescore,venue(timezone)"
         )
         response = await self.http_client.get(url)
 

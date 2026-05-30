@@ -14,7 +14,49 @@ interface LinescoreCardProps {
   topInset?: number;
 }
 
-function HealthPill({ label, online, color }: { label: string; online?: boolean; color: string }) {
+const EMOJI_FONT_STACK = '"Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif';
+
+function formatPreviewStartLabel(
+  scheduledStart?: string | null,
+  scheduledTimeZone?: string | null
+): string {
+  if (!scheduledStart) {
+    return 'PREVIEW';
+  }
+
+  const date = new Date(scheduledStart);
+  if (Number.isNaN(date.getTime())) {
+    return 'PREVIEW';
+  }
+
+  const dateLabel = new Intl.DateTimeFormat('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    ...(scheduledTimeZone ? { timeZone: scheduledTimeZone } : {}),
+  })
+    .format(date)
+    .replace(/,/g, '');
+  const timeLabel = new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric',
+    minute: '2-digit',
+    ...(scheduledTimeZone ? { timeZone: scheduledTimeZone } : {}),
+  }).format(date);
+
+  return `${dateLabel} · ${timeLabel}`.toUpperCase();
+}
+
+function HealthPill({
+  icon,
+  label,
+  online,
+  color,
+}: {
+  icon: string;
+  label: string;
+  online?: boolean;
+  color: string;
+}) {
   const isOffline = online === false;
   if (!isOffline) {
     return null;
@@ -23,9 +65,11 @@ function HealthPill({ label, online, color }: { label: string; online?: boolean;
   return (
     <span
       style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 'clamp(3px, calc(0.3cqi * var(--scoreboard-scale, 1)), calc(8px * var(--scoreboard-scale, 1)))',
         fontFamily: '"DM Mono", monospace',
-        fontSize:
-          'clamp(9px, calc(0.95cqi * var(--scoreboard-scale, 1)), calc(26px * var(--scoreboard-scale, 1)))',
+        fontSize: 'var(--scoreboard-health-pill-size)',
         letterSpacing: '0.12em',
         color: isOffline ? '#29120f' : color,
         background: isOffline ? '#f1b4a8' : 'transparent',
@@ -35,7 +79,8 @@ function HealthPill({ label, online, color }: { label: string; online?: boolean;
           : 0,
       }}
     >
-      {label}
+      <span style={{ fontFamily: EMOJI_FONT_STACK, lineHeight: 1 }}>{icon}</span>
+      <span>{label}</span>
     </span>
   );
 }
@@ -53,7 +98,7 @@ export function LinescoreCard({
   const headerRight: CSSProperties = {
     display: 'flex',
     alignItems: 'center',
-    gap: 'clamp(8px, calc(0.8cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)))',
+    gap: 'var(--scoreboard-status-gap)',
   };
   const linescoreRowStyle: CSSProperties = {
     display: 'grid',
@@ -66,7 +111,7 @@ export function LinescoreCard({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 'clamp(22px, calc(2.3cqi * var(--scoreboard-scale, 1)), calc(66px * var(--scoreboard-scale, 1)))',
+    height: 'var(--scoreboard-linescore-row-height)',
     borderRight: `1px solid ${palette.line}`,
   };
   const cellLabelStyle: CSSProperties = {
@@ -75,14 +120,14 @@ export function LinescoreCard({
     paddingLeft: 'clamp(8px, calc(0.9cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)))',
     fontFamily: '"Big Shoulders Stencil Display", sans-serif',
     fontWeight: 700,
-    fontSize: 'clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1)))',
+    fontSize: 'var(--scoreboard-linescore-team-size)',
     color: palette.ink,
   };
   const scoreCellStyle: CSSProperties = {
     ...commonCell,
     fontFamily: '"Big Shoulders Display", sans-serif',
     fontWeight: 700,
-    fontSize: 'clamp(14px, calc(1.8cqi * var(--scoreboard-scale, 1)), calc(48px * var(--scoreboard-scale, 1)))',
+    fontSize: 'var(--scoreboard-linescore-score-size)',
     lineHeight: 1,
     fontVariantNumeric: 'tabular-nums',
     color: palette.ink,
@@ -94,11 +139,21 @@ export function LinescoreCard({
   };
   const headerCellStyle: CSSProperties = {
     ...commonCell,
-    height: 'clamp(18px, calc(1.9cqi * var(--scoreboard-scale, 1)), calc(56px * var(--scoreboard-scale, 1)))',
+    height: 'var(--scoreboard-linescore-header-height)',
     fontFamily: '"DM Mono", monospace',
-    fontSize: 'clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1)))',
+    fontSize: 'var(--scoreboard-header-label-size)',
     color: palette.inkDim,
   };
+
+  const abstractState = game.abstractState.toLowerCase();
+  const gameStateLabel =
+    connectionState === 'disconnected'
+      ? `DISCONNECTED · ${game.inningState.toUpperCase()} ${game.inningOrdinal.toUpperCase()}`
+      : abstractState === 'final'
+        ? 'FINAL'
+        : abstractState === 'preview'
+          ? formatPreviewStartLabel(game.scheduledStart, game.scheduledTimeZone)
+          : `● LIVE · ${game.inningState.toUpperCase()} ${game.inningOrdinal.toUpperCase()}`;
 
   const renderGameRow = (
     label: string,
@@ -136,19 +191,15 @@ export function LinescoreCard({
           justifyContent: 'space-between',
           padding: '0 0 clamp(8px, calc(1cqi * var(--scoreboard-scale, 1)), calc(24px * var(--scoreboard-scale, 1)))',
           fontFamily: '"DM Mono", monospace',
-          fontSize:
-            'clamp(10px, calc(1.05cqi * var(--scoreboard-scale, 1)), calc(30px * var(--scoreboard-scale, 1)))',
+          fontSize: 'var(--scoreboard-status-size)',
           letterSpacing: '0.18em',
           color: palette.inkDim,
         }}
       >
-        <span>
-          {connectionState === 'disconnected' ? 'DISCONNECTED ·' : '● LIVE ·'} {game.inningState.toUpperCase()}{' '}
-          {game.inningOrdinal.toUpperCase()}
-        </span>
+        <span>{gameStateLabel}</span>
         <span style={headerRight}>
-          <HealthPill label="🌭 OFFLINE" online={readerHealth?.hotdogOnline} color={palette.inkDim} />
-          <HealthPill label="🍺 OFFLINE" online={readerHealth?.beerOnline} color={palette.inkDim} />
+          <HealthPill icon="🌭" label="OFFLINE" online={readerHealth?.hotdogOnline} color={palette.inkDim} />
+          <HealthPill icon="🍺" label="OFFLINE" online={readerHealth?.beerOnline} color={palette.inkDim} />
           <span>GABP</span>
         </span>
       </div>

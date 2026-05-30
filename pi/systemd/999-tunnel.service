@@ -1,12 +1,13 @@
 [Unit]
 Description=9-9-9 Challenge Cloudflare Tunnel
-After=network-online.target
+After=network-online.target 999-api.service
 Wants=network-online.target
+Requires=999-api.service
 
 [Service]
 Type=simple
-User=pi
-ExecStart=/usr/local/bin/cloudflared --config /opt/999/infra/cloudflared/config.yml tunnel run
+User=austinzani
+ExecStart=/usr/bin/cloudflared --config /home/austinzani/9-9-9-Challenge/infra/cloudflared/config.yml tunnel run
 Restart=always
 RestartSec=3
 
