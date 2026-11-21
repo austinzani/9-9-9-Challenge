@@ -200,7 +200,7 @@ export function LinescoreCard({
         <span style={headerRight}>
           <HealthPill icon="🌭" label="OFFLINE" online={readerHealth?.hotdogOnline} color={palette.inkDim} />
           <HealthPill icon="🍺" label="OFFLINE" online={readerHealth?.beerOnline} color={palette.inkDim} />
-          <span>GABP</span>
+          {game.venueName ? <span>{game.venueName.toUpperCase()}</span> : null}
         </span>
       </div>
 

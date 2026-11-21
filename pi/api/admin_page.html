@@ -153,7 +153,7 @@
         <div>
           <h2>Archive Event</h2>
           <label>Event date (YYYY-MM-DD)</label>
-          <input id="archive-date" placeholder="2026-05-31" />
+          <input id="archive-date" placeholder="YYYY-MM-DD" />
           <button id="archive-btn">Archive + Reset</button>
         </div>
         <div>
@@ -168,16 +168,16 @@
       <section>
         <h2>QR Fullscreen</h2>
         <button id="show-qr-btn">Show QR</button>
-        <span class="status">URL: https://999.austinzani.dev</span>
+        <span class="status">URL: {{PUBLIC_URL}}</span>
       </section>
     </main>
 
     <div id="qr-overlay">
       <img
-        alt="999 URL QR"
-        src="https://api.qrserver.com/v1/create-qr-code/?size=1024x1024&data=https%3A%2F%2F999.austinzani.dev"
+        alt="QR code for the scoreboard URL"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=1024x1024&data={{PUBLIC_URL_ENCODED}}"
       />
-      <div class="label">https://999.austinzani.dev</div>
+      <div class="label">{{PUBLIC_URL}}</div>
     </div>
 
     <script>

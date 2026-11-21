@@ -99,3 +99,14 @@ def test_parse_espn_payload_maps_fallback_shape() -> None:
     assert parsed["scheduledTimeZone"] is None
     assert parsed["venueName"] == "Great American Ball Park"
     assert parsed["R"] == {"away": 4, "home": 3}
+
+
+def test_default_game_state_uses_configured_team() -> None:
+    from pi.api.mlb import MlbPoller, team_abbreviation_for_id
+
+    assert team_abbreviation_for_id(111) == "BOS"
+    assert team_abbreviation_for_id(999999) == "HOME"
+
+    poller = MlbPoller(team_id=111, game_date="2026-07-04")
+    assert poller.team_abbr == "BOS"
+    assert poller.current_game["homeAbbr"] == "BOS"

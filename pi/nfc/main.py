@@ -31,7 +31,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="9-9-9 NFC reader daemon")
     parser.add_argument(
         "--api-url",
-        default="http://127.0.0.1:8000/api/tap",
+        default="http://127.0.0.1:8001/api/tap",
         help="Local API endpoint to receive tap events.",
     )
     parser.add_argument(
@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--heartbeat-url",
-        default="http://127.0.0.1:8000/api/nfc/heartbeat",
+        default="http://127.0.0.1:8001/api/nfc/heartbeat",
         help="API endpoint used for station health heartbeats.",
     )
     return parser.parse_args()

@@ -22,15 +22,15 @@ const game: GameState = {
 };
 
 const participants: Participant[] = [
-  { uid: '1', name: 'Austin', hotdogs: 3, beers: 4 },
-  { uid: '2', name: 'Aron', hotdogs: 2, beers: 4 },
-  { uid: '3', name: 'Jefferson', hotdogs: 1, beers: 3 },
+  { uid: '1', name: 'Alex', hotdogs: 3, beers: 4 },
+  { uid: '2', name: 'Jordan', hotdogs: 2, beers: 4 },
+  { uid: '3', name: 'Casey', hotdogs: 1, beers: 3 },
 ];
 
 function renderAt(width: number, height: number) {
   const result = render(
     <div style={{ width, height }}>
-      <Scoreboard participants={participants} game={game} showTopHighlight qrUrl="999.austinzani.dev" />
+      <Scoreboard participants={participants} game={game} showTopHighlight qrUrl="https://scoreboard.example.com" />
     </div>
   );
   return result.container.firstChild;
@@ -52,7 +52,7 @@ describe('Scoreboard snapshots', () => {
             venueName: 'Great American Ball Park',
           }}
           showTopHighlight
-          qrUrl="999.austinzani.dev"
+          qrUrl="https://scoreboard.example.com"
         />
       </div>
     );
@@ -66,7 +66,7 @@ describe('Scoreboard snapshots', () => {
   it('renders live empty state copy when nobody is registered', () => {
     render(
       <div style={{ width: 1920, height: 1080 }}>
-        <Scoreboard participants={[]} game={game} showTopHighlight qrUrl="999.austinzani.dev" />
+        <Scoreboard participants={[]} game={game} showTopHighlight qrUrl="https://scoreboard.example.com" />
       </div>
     );
 

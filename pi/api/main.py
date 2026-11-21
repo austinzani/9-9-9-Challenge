@@ -6,14 +6,17 @@ import asyncio
 import os
 import time
 from contextlib import asynccontextmanager, suppress
+from html import escape
 from datetime import date
 from pathlib import Path
 from typing import Any, Literal
+from urllib.parse import quote
 
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 from pi.api.admin import router as admin_router
@@ -27,8 +30,36 @@ from pi.api.db import (
     record_tap,
     register_and_consume_pending,
 )
-from pi.api.mlb import MlbPoller, default_game_state, utc_iso_now
+from pi.api.mlb import MlbPoller, default_game_state, team_abbreviation_for_id, utc_iso_now
 from pi.api.ws import ConnectionManager
+
+# Pick up a repo-root .env for local runs. Real environment variables win.
+load_dotenv()
+
+DEFAULT_MLB_TEAM_ID = 113  # Cincinnati Reds. Set MLB_TEAM_ID for your team.
+DEFAULT_CORS_ORIGINS = [
+    "http://localhost",
+    "http://localhost:5173",
+    "http://localhost:8001",
+    "http://127.0.0.1",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:8001",
+]
+
+
+def public_url() -> str:
+    """Public scoreboard URL guests scan to follow along (PUBLIC_URL), without a trailing slash."""
+    return os.getenv("PUBLIC_URL", "").strip().rstrip("/")
+
+
+def cors_origins() -> list[str]:
+    """Local origins, plus PUBLIC_URL and any extra origins in CORS_ALLOW_ORIGINS (comma-separated)."""
+    origins = list(DEFAULT_CORS_ORIGINS)
+    extra = [origin.strip().rstrip("/") for origin in os.getenv("CORS_ALLOW_ORIGINS", "").split(",")]
+    for origin in [public_url(), *extra]:
+        if origin and origin not in origins:
+            origins.append(origin)
+    return origins
 
 
 class RegisterRequest(BaseModel):
@@ -84,7 +115,7 @@ async def lifespan(app: FastAPI):
     conn = connect()
     initialize_schema(conn)
 
-    team_id = int(os.getenv("MLB_TEAM_ID", "113"))
+    team_id = int(os.getenv("MLB_TEAM_ID") or DEFAULT_MLB_TEAM_ID)
     game_date = os.getenv("MLB_GAME_DATE") or date.today().isoformat()
     disable_mlb_poller = os.getenv("DISABLE_MLB_POLLER", "0") == "1"
 
@@ -92,7 +123,7 @@ async def lifespan(app: FastAPI):
 
     app.state.db = conn
     app.state.poller = poller
-    app.state.game_state = default_game_state()
+    app.state.game_state = default_game_state(team_abbreviation_for_id(team_id))
     app.state.ws_manager = manager
     app.state.build_state_payload = build_state_payload_from_app
     app.state.reader_last_seen = {
@@ -132,13 +163,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="9-9-9 Challenge API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://999.austinzani.dev",
-        "http://localhost",
-        "http://localhost:8000",
-        "http://127.0.0.1",
-        "http://127.0.0.1:8000",
-    ],
+    allow_origins=cors_origins(),
     allow_credentials=False,
     allow_methods=["GET", "POST", "DELETE", "OPTIONS"],
     allow_headers=["*"],
@@ -153,11 +178,15 @@ async def get_state(request: Request) -> dict[str, Any]:
 
 
 @app.get("/admin", include_in_schema=False)
-async def admin_page() -> HTMLResponse:
+async def admin_page(request: Request) -> HTMLResponse:
     """Serve a local-only admin console UI for game-day operations."""
     if not ADMIN_PAGE_PATH.exists():
         return HTMLResponse("<h1>Admin page missing.</h1>", status_code=500)
-    return HTMLResponse(ADMIN_PAGE_PATH.read_text(encoding="utf-8"))
+    scoreboard_url = public_url() or str(request.base_url).rstrip("/")
+    html = ADMIN_PAGE_PATH.read_text(encoding="utf-8")
+    html = html.replace("{{PUBLIC_URL}}", escape(scoreboard_url))
+    html = html.replace("{{PUBLIC_URL_ENCODED}}", quote(scoreboard_url, safe=""))
+    return HTMLResponse(html)
 
 
 @app.post("/api/register")

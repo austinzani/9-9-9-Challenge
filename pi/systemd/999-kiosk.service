@@ -1,3 +1,4 @@
+# Template: render and install with `sudo ./pi/scripts/install-services.sh kiosk`.
 [Unit]
 Description=9-9-9 Challenge Kiosk Display
 After=network-online.target graphical.target 999-api.service
@@ -6,15 +7,16 @@ Requires=999-api.service
 
 [Service]
 Type=simple
-User=austinzani
-WorkingDirectory=/home/austinzani/9-9-9-Challenge
+User=@APP_USER@
+WorkingDirectory=@APP_DIR@
 Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/austinzani/.Xauthority
-Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=XAUTHORITY=@APP_HOME@/.Xauthority
+Environment=XDG_RUNTIME_DIR=/run/user/@APP_UID@
 Environment=WAYLAND_DISPLAY=wayland-0
-Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/@APP_UID@/bus
 Environment=CHALLENGE_LOCAL_URL=http://127.0.0.1:8001/?mode=kiosk
-ExecStart=/bin/bash /home/austinzani/9-9-9-Challenge/pi/scripts/launch-kiosk.sh
+EnvironmentFile=-@APP_DIR@/.env
+ExecStart=/bin/bash @APP_DIR@/pi/scripts/launch-kiosk.sh
 Restart=always
 RestartSec=3
 
