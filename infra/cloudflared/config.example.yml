@@ -1,0 +1,25 @@
+# Cloudflare Tunnel ingress for the Pi-hosted scoreboard.
+#
+# 1. cp infra/cloudflared/config.example.yml infra/cloudflared/config.yml  (config.yml is gitignored)
+# 2. Create a tunnel:  cloudflared tunnel create 999-challenge
+# 3. Point credentials-file at the JSON that command wrote, and swap in your hostnames.
+# 4. Route DNS:         cloudflared tunnel route dns 999-challenge scoreboard.example.com
+# 5. Install the unit:  sudo ./pi/scripts/install-services.sh tunnel
+#
+# Already running a tunnel on this Pi? Merge the ingress rules below into its config instead.
+#
+# The API and built frontend both listen on port 8001. The admin page and admin API
+# are blocked here, so they're only reachable from the Pi's own network.
+tunnel: 999-challenge
+credentials-file: /home/pi/.cloudflared/999-challenge.json
+
+ingress:
+  - hostname: scoreboard.example.com
+    path: ^/admin
+    service: http_status:404
+  - hostname: scoreboard.example.com
+    path: ^/api/admin
+    service: http_status:404
+  - hostname: scoreboard.example.com
+    service: http://localhost:8001
+  - service: http_status:404

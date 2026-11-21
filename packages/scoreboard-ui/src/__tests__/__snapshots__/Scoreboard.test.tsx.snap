@@ -21,11 +21,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           </span>
           <span
             style="display: flex; align-items: center; gap: var(--scoreboard-status-gap);"
-          >
-            <span>
-              GABP
-            </span>
-          </span>
+          />
         </div>
         <div
           style="border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
@@ -377,7 +373,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           <span
             style="text-shadow: 0 0 14px #d6a23a44;"
           >
-            Austin
+            Alex
           </span>
         </div>
         <div
@@ -422,7 +418,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           <span
             style="text-shadow: none;"
           >
-            Aron
+            Jordan
           </span>
         </div>
         <div
@@ -467,7 +463,7 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
           <span
             style="text-shadow: none;"
           >
-            Jefferson
+            Casey
           </span>
         </div>
         <div
@@ -505,12 +501,12 @@ exports[`Scoreboard snapshots > matches 4k viewport snapshot 1`] = `
       <div
         style="margin-bottom: var(--scoreboard-footer-gap);"
       >
-        9·9·9 CHALLENGE — MAY 31, 2026
+        9·9·9 CHALLENGE
       </div>
       <div
         style="color: rgb(214, 162, 58);"
       >
-        999.AUSTINZANI.DEV
+        SCOREBOARD.EXAMPLE.COM
       </div>
     </div>
   </div>
@@ -538,11 +534,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           </span>
           <span
             style="display: flex; align-items: center; gap: var(--scoreboard-status-gap);"
-          >
-            <span>
-              GABP
-            </span>
-          </span>
+          />
         </div>
         <div
           style="border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
@@ -894,7 +886,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           <span
             style="text-shadow: 0 0 14px #d6a23a44;"
           >
-            Austin
+            Alex
           </span>
         </div>
         <div
@@ -939,7 +931,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           <span
             style="text-shadow: none;"
           >
-            Aron
+            Jordan
           </span>
         </div>
         <div
@@ -984,7 +976,7 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
           <span
             style="text-shadow: none;"
           >
-            Jefferson
+            Casey
           </span>
         </div>
         <div
@@ -1022,12 +1014,12 @@ exports[`Scoreboard snapshots > matches 1080p viewport snapshot 1`] = `
       <div
         style="margin-bottom: var(--scoreboard-footer-gap);"
       >
-        9·9·9 CHALLENGE — MAY 31, 2026
+        9·9·9 CHALLENGE
       </div>
       <div
         style="color: rgb(214, 162, 58);"
       >
-        999.AUSTINZANI.DEV
+        SCOREBOARD.EXAMPLE.COM
       </div>
     </div>
   </div>
@@ -1055,11 +1047,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           </span>
           <span
             style="display: flex; align-items: center; gap: var(--scoreboard-status-gap);"
-          >
-            <span>
-              GABP
-            </span>
-          </span>
+          />
         </div>
         <div
           style="border: 1px solid rgb(14, 36, 25); background: rgb(29, 66, 51);"
@@ -1411,7 +1399,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           <span
             style="text-shadow: 0 0 14px #d6a23a44;"
           >
-            Austin
+            Alex
           </span>
         </div>
         <div
@@ -1456,7 +1444,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           <span
             style="text-shadow: none;"
           >
-            Aron
+            Jordan
           </span>
         </div>
         <div
@@ -1501,7 +1489,7 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
           <span
             style="text-shadow: none;"
           >
-            Jefferson
+            Casey
           </span>
         </div>
         <div
@@ -1539,12 +1527,12 @@ exports[`Scoreboard snapshots > matches phone viewport snapshot 1`] = `
       <div
         style="margin-bottom: var(--scoreboard-footer-gap);"
       >
-        9·9·9 CHALLENGE — MAY 31, 2026
+        9·9·9 CHALLENGE
       </div>
       <div
         style="color: rgb(214, 162, 58);"
       >
-        999.AUSTINZANI.DEV
+        SCOREBOARD.EXAMPLE.COM
       </div>
     </div>
   </div>

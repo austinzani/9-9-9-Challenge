@@ -32,7 +32,7 @@ Usage:
 
 Commands:
   up     Install deps, build web bundle, install Playwright Chromium, and start API locally.
-  seed   Seed demo participants/taps + unknown UID flow against http://127.0.0.1:8000.
+  seed   Seed demo participants/taps + unknown UID flow against http://127.0.0.1:8001.
   tests  Run pytest, vitest snapshot tests, and Playwright e2e.
   all    Install/build and run tests (does not keep API running).
 USAGE
@@ -82,16 +82,16 @@ install_playwright_chromium() {
 start_api() {
   require_cmd python3
 
-  log 'Starting API at http://127.0.0.1:8000 with DISABLE_MLB_POLLER=1'
+  log 'Starting API at http://127.0.0.1:8001 with DISABLE_MLB_POLLER=1'
   log 'Open these URLs:'
-  log '  - http://127.0.0.1:8000/'
-  log '  - http://127.0.0.1:8000/?mode=kiosk'
-  log '  - http://127.0.0.1:8000/admin'
+  log '  - http://127.0.0.1:8001/'
+  log '  - http://127.0.0.1:8001/?mode=kiosk'
+  log '  - http://127.0.0.1:8001/admin'
 
   (
     cd "$REPO_ROOT"
     DISABLE_MLB_POLLER=1 CHALLENGE_DB_PATH="${REPO_ROOT}/data/999.sqlite" \
-      python3 -m uvicorn pi.api.main:app --host 127.0.0.1 --port 8000 --reload
+      python3 -m uvicorn pi.api.main:app --host 127.0.0.1 --port 8001 --reload
   )
 }
 
@@ -100,33 +100,33 @@ seed_demo_data() {
 
   log 'Seeding demo participant data...'
 
-  curl -sf -X POST http://127.0.0.1:8000/api/admin/force-register \
+  curl -sf -X POST http://127.0.0.1:8001/api/admin/force-register \
     -H 'Content-Type: application/json' \
-    -d '{"uid":"A1","name":"Austin"}' >/dev/null
+    -d '{"uid":"A1","name":"Alex"}' >/dev/null
 
-  curl -sf -X POST http://127.0.0.1:8000/api/admin/force-register \
+  curl -sf -X POST http://127.0.0.1:8001/api/admin/force-register \
     -H 'Content-Type: application/json' \
-    -d '{"uid":"M1","name":"Maddie"}' >/dev/null
+    -d '{"uid":"M1","name":"Riley"}' >/dev/null
 
-  curl -sf -X POST http://127.0.0.1:8000/api/tap \
+  curl -sf -X POST http://127.0.0.1:8001/api/tap \
     -H 'Content-Type: application/json' \
     -d '{"uid":"A1","station":"hotdog"}' >/dev/null
 
-  curl -sf -X POST http://127.0.0.1:8000/api/tap \
+  curl -sf -X POST http://127.0.0.1:8001/api/tap \
     -H 'Content-Type: application/json' \
     -d '{"uid":"A1","station":"beer"}' >/dev/null
 
-  curl -sf -X POST http://127.0.0.1:8000/api/tap \
+  curl -sf -X POST http://127.0.0.1:8001/api/tap \
     -H 'Content-Type: application/json' \
     -d '{"uid":"M1","station":"beer"}' >/dev/null
 
   log 'Triggering unknown-UID registration modal flow...'
-  curl -sf -X POST http://127.0.0.1:8000/api/tap \
+  curl -sf -X POST http://127.0.0.1:8001/api/tap \
     -H 'Content-Type: application/json' \
     -d '{"uid":"NEWTAG1","station":"beer"}' >/dev/null
 
   log 'Sending one reader heartbeat so health pills can be verified...'
-  curl -sf -X POST http://127.0.0.1:8000/api/nfc/heartbeat \
+  curl -sf -X POST http://127.0.0.1:8001/api/nfc/heartbeat \
     -H 'Content-Type: application/json' \
     -d '{"station":"hotdog"}' >/dev/null
 

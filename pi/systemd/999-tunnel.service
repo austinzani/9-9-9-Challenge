@@ -1,3 +1,5 @@
+# Template: render and install with `sudo ./pi/scripts/install-services.sh tunnel`.
+# Needs infra/cloudflared/config.yml (copy it from config.example.yml first).
 [Unit]
 Description=9-9-9 Challenge Cloudflare Tunnel
 After=network-online.target 999-api.service
@@ -6,8 +8,8 @@ Requires=999-api.service
 
 [Service]
 Type=simple
-User=austinzani
-ExecStart=/usr/bin/cloudflared --config /home/austinzani/9-9-9-Challenge/infra/cloudflared/config.yml tunnel run
+User=@APP_USER@
+ExecStart=/usr/bin/cloudflared --config @APP_DIR@/infra/cloudflared/config.yml tunnel run
 Restart=always
 RestartSec=3
 

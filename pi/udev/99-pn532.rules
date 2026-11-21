@@ -1,16 +1,15 @@
 # Pin identical PN532 readers to stable role names by physical USB port path.
 #
-# On this Pi the readers currently enumerate through a CH340 USB-serial bridge:
-#   idVendor=1a86
-#   idProduct=7523
+# The values below are for PN532 boards that use a CH340 USB-serial bridge
+# (idVendor=1a86, idProduct=7523). Check yours with:
+#   udevadm info -a -n /dev/ttyUSB0 | grep -E 'idVendor|idProduct'
 #
 # Capture the devpath for each physical port with:
 #   udevadm info -a -n /dev/ttyUSB0 | grep devpath
 #   udevadm info -a -n /dev/ttyUSB1 | grep devpath
 #
-# Current observed USB-port devpaths are 1.1 and 1.2, but you still need to
-# confirm which physical reader is HOTDOG vs BEER before replacing the
-# placeholders below.
+# Replace 1.1 / 1.2 below with the devpaths you see, matching each physical
+# USB port to the station it serves (HOTDOG vs BEER).
 SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", KERNEL=="ttyUSB*", ATTRS{devpath}=="1.1", SYMLINK+="nfc-hotdog"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", KERNEL=="ttyUSB*", ATTRS{devpath}=="1.2", SYMLINK+="nfc-beer"
 

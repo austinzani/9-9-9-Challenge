@@ -220,6 +220,7 @@ export interface ScoreboardProps {
   readerHealth?: ReaderHealth;
   showTopHighlight?: boolean;
   qrUrl?: string;
+  eventLabel?: string;
   showQrUrl?: boolean;
   showQrCode?: boolean;
   topInset?: number;
@@ -245,6 +246,7 @@ export function Scoreboard({
   readerHealth,
   showTopHighlight = true,
   qrUrl,
+  eventLabel,
   showQrUrl = true,
   showQrCode = false,
   topInset = 54,
@@ -446,6 +448,7 @@ export function Scoreboard({
             <Footer
               palette={palette}
               qrUrl={qrUrl}
+              eventLabel={eventLabel}
               showQrUrl={showQrUrl}
               showQrCode={showQrCode}
             />
@@ -481,6 +484,7 @@ export function Scoreboard({
           <Footer
             palette={palette}
             qrUrl={qrUrl}
+            eventLabel={eventLabel}
             showQrUrl={showQrUrl}
             showQrCode={showQrCode}
           />

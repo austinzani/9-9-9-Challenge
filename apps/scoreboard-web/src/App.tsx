@@ -8,6 +8,9 @@ import type { TapFeedback } from './useScoreboardSocket';
 import { useScoreboardSocket } from './useScoreboardSocket';
 
 const API_BASE = import.meta.env.VITE_API_BASE ?? '';
+// Where guests follow along. Defaults to whatever host is serving this page.
+const PUBLIC_URL = (import.meta.env.VITE_PUBLIC_URL ?? '').trim() || window.location.origin;
+const EVENT_LABEL = (import.meta.env.VITE_EVENT_LABEL ?? '').trim() || '9·9·9 CHALLENGE';
 const API_TAP_URL = `${API_BASE}/api/tap`;
 const API_FORCE_REGISTER_URL = `${API_BASE}/api/admin/force-register`;
 const DEBUG_MENU_ENABLED = parseBooleanFlag(import.meta.env.VITE_DEBUG_MENU);
@@ -297,7 +300,8 @@ export function App() {
                 : null
             }
             showTopHighlight
-            qrUrl="999.austinzani.dev"
+            qrUrl={PUBLIC_URL}
+            eventLabel={EVENT_LABEL}
             showQrUrl={!isKioskMode}
             showQrCode={isKioskMode}
             connectionState={connectionState}

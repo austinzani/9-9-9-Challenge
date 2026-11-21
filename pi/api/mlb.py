@@ -53,13 +53,18 @@ def ordinal(value: int) -> str:
     return f"{value}{suffix}"
 
 
-def default_game_state() -> dict[str, Any]:
+def team_abbreviation_for_id(team_id: int) -> str:
+    """Look up an MLB team abbreviation from its MLB Stats API team id."""
+    return TEAM_ABBREVIATIONS.get(team_id, "HOME")
+
+
+def default_game_state(home_abbr: str = "HOME") -> dict[str, Any]:
     """Fallback game state used before the first successful poll."""
     return {
-        "awayAbbr": "CHC",
-        "awayName": "CUBS",
-        "homeAbbr": "CIN",
-        "homeName": "REDS",
+        "awayAbbr": "TBD",
+        "awayName": "TBD",
+        "homeAbbr": home_abbr,
+        "homeName": home_abbr,
         "inningOrdinal": "1st",
         "inningState": "Top",
         "abstractState": "Preview",
@@ -171,7 +176,7 @@ def parse_mlb_schedule_payload(payload: dict[str, Any]) -> dict[str, Any] | None
     return normalized
 
 
-def parse_espn_payload(payload: dict[str, Any], team_abbr: str = "CIN") -> dict[str, Any] | None:
+def parse_espn_payload(payload: dict[str, Any], team_abbr: str) -> dict[str, Any] | None:
     """Parse ESPN scoreboard fallback payload into the shared shape."""
     events = payload.get("events") or []
     if not events:
@@ -240,9 +245,10 @@ class MlbPoller:
         http_client: httpx.AsyncClient | None = None,
     ) -> None:
         self.team_id = team_id
+        self.team_abbr = team_abbreviation_for_id(team_id)
         self.game_date = game_date
         self.http_client = http_client or httpx.AsyncClient(timeout=10.0)
-        self.current_game: dict[str, Any] = default_game_state()
+        self.current_game: dict[str, Any] = default_game_state(self.team_abbr)
         self.manual_override: dict[str, Any] | None = None
         self._consecutive_mlb_errors = 0
 
@@ -290,7 +296,7 @@ class MlbPoller:
         )
         response = await self.http_client.get(url)
         response.raise_for_status()
-        return parse_espn_payload(response.json())
+        return parse_espn_payload(response.json(), team_abbr=self.team_abbr)
 
     async def poll_once(self) -> dict[str, Any]:
         """Run one poll iteration, honoring override and fallback rules."""

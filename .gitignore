@@ -26,4 +26,6 @@ archive/
 .env
 .env.*
 !.env.example
-!apps/scoreboard-web/.env.production
+
+# Your own tunnel config (start from config.example.yml)
+infra/cloudflared/config.yml

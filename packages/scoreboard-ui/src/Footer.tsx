@@ -4,7 +4,10 @@ import type { Palette } from './palettes';
 
 interface FooterProps {
   palette: Palette;
+  /** Public scoreboard URL for remote viewers. The URL line and QR code are hidden when omitted. */
   qrUrl?: string;
+  /** Text on the footer's top line, e.g. "9·9·9 CHALLENGE — JULY 4, 2026". */
+  eventLabel?: string;
   showQrUrl?: boolean;
   showQrCode?: boolean;
 }
@@ -12,7 +15,8 @@ interface FooterProps {
 /** Footer with event stamp and public URL for remote viewers. */
 export function Footer({
   palette,
-  qrUrl = '999.austinzani.dev',
+  qrUrl,
+  eventLabel = '9·9·9 CHALLENGE',
   showQrUrl = true,
   showQrCode = false,
 }: FooterProps) {
@@ -34,10 +38,14 @@ export function Footer({
           marginBottom: 'var(--scoreboard-footer-gap)',
         }}
       >
-        9·9·9 CHALLENGE — MAY 31, 2026
+        {eventLabel}
       </div>
-      {showQrUrl && <div style={{ color: palette.gold }}>{qrUrl.toUpperCase()}</div>}
-      {showQrCode && (
+      {showQrUrl && qrUrl && (
+        <div style={{ color: palette.gold }}>
+          {qrUrl.replace(/^https?:\/\//, '').replace(/\/$/, '').toUpperCase()}
+        </div>
+      )}
+      {showQrCode && qrUrl && (
         <div
           style={{
             marginTop: 'calc(var(--scoreboard-footer-gap) * 2)',

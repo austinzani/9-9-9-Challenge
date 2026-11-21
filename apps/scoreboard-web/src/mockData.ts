@@ -21,11 +21,11 @@ export const INITIAL_GAME: GameState = {
 };
 
 export const INITIAL_PARTICIPANTS: Participant[] = [
-  { uid: 'mock-austin', name: 'Austin', hotdogs: 3, beers: 4 },
-  { uid: 'mock-aron', name: 'Aron', hotdogs: 2, beers: 4 },
-  { uid: 'mock-jefferson', name: 'Jefferson', hotdogs: 1, beers: 3 },
-  { uid: 'mock-maddie', name: 'Maddie', hotdogs: 2, beers: 2 },
-  { uid: 'mock-tyler', name: 'Tyler', hotdogs: 1, beers: 2 },
+  { uid: 'mock-alex', name: 'Alex', hotdogs: 3, beers: 4 },
+  { uid: 'mock-jordan', name: 'Jordan', hotdogs: 2, beers: 4 },
+  { uid: 'mock-casey', name: 'Casey', hotdogs: 1, beers: 3 },
+  { uid: 'mock-riley', name: 'Riley', hotdogs: 2, beers: 2 },
+  { uid: 'mock-morgan', name: 'Morgan', hotdogs: 1, beers: 2 },
   { uid: 'mock-sam', name: 'Sam', hotdogs: 0, beers: 3 },
   { uid: 'mock-priya', name: 'Priya', hotdogs: 1, beers: 1 },
   { uid: 'mock-marcus', name: 'Marcus', hotdogs: 0, beers: 2 },
